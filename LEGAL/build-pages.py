@@ -1,0 +1,134 @@
+#!/usr/bin/env python3
+"""Convert LEGAL markdown files to GitHub Pages HTML."""
+
+from pathlib import Path
+import markdown
+
+ROOT = Path(__file__).resolve().parent
+DOCS = ROOT.parent / "docs"
+
+STYLE = """
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: #e8e8ed;
+  background: linear-gradient(160deg, #0a0a0f 0%, #12121a 50%, #0d1118 100%);
+  min-height: 100vh;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+header h1 { margin: 0 0 8px; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+header p { margin: 0; color: #8e8e93; font-size: 0.95rem; }
+nav { margin-bottom: 28px; font-size: 0.9rem; }
+nav a { color: #64b5f6; text-decoration: none; margin-right: 16px; }
+nav a:hover { text-decoration: underline; }
+article h2 { margin-top: 2rem; font-size: 1.25rem; color: #f5f5f7; }
+article h3 { margin-top: 1.5rem; font-size: 1.05rem; color: #d1d1d6; }
+article p, article li { color: #c7c7cc; }
+article a { color: #64b5f6; }
+article hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 2rem 0; }
+article code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+article table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+article th, article td { border: 1px solid rgba(255,255,255,0.1); padding: 8px 12px; text-align: left; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); color: #636366; font-size: 0.85rem; }
+"""
+
+INDEX_HTML = """<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuraTime · 隐私政策</title>
+  <style>{style}</style>
+</head>
+<body>
+  <motion></motion>
+  <motion></motion>
+  <div class="wrap">
+    <header>
+      <h1>AuraTime · 微光时空</h1>
+      <p>Privacy Policy / 隐私政策</p>
+    </header>
+    <nav>
+      <a href="privacy-cn.html">中文版</a>
+      <a href="privacy-en.html">English</a>
+    </nav>
+    <article>
+      <p>请选择语言查看完整隐私政策。Please choose a language to read the full privacy policy.</p>
+      <ul>
+        <li><a href="privacy-cn.html">隐私政策（简体中文）</a></li>
+        <li><a href="privacy-en.html">Privacy Policy (English)</a></li>
+      </ul>
+    </article>
+    <footer>© AuraTime · <a href="mailto:support@auratime.app">support@auratime.app</a></footer>
+  </motion></motion>
+</body>
+</html>
+""".replace("<motion></motion>", "")
+
+
+def render_page(md_path: Path, lang: str, title: str, other_lang_href: str, other_label: str) -> str:
+    body = markdown.markdown(
+        md_path.read_text(encoding="utf-8"),
+        extensions=["tables", "fenced_code", "nl2br"],
+    )
+    return f"""<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <style>{STYLE}</style>
+</head>
+<body>
+  <motion></motion>
+  <div class="wrap">
+    <header>
+      <h1>AuraTime · 微光时空</h1>
+      <p>{title}</p>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="{other_lang_href}">{other_label}</a>
+    </nav>
+    <article>
+{body}
+    </article>
+    <footer>© AuraTime · <a href="mailto:support@auratime.app">support@auratime.app</a></footer>
+  </div>
+</body>
+</html>
+""".replace("<motion></motion>", "")
+
+
+def main() -> None:
+    DOCS.mkdir(parents=True, exist_ok=True)
+    (DOCS / "index.html").write_text(INDEX_HTML.format(style=STYLE), encoding="utf-8")
+    (DOCS / "privacy-cn.html").write_text(
+        render_page(
+            ROOT / "Privacy_Policy_CN.md",
+            "zh-Hans",
+            "隐私政策",
+            "privacy-en.html",
+            "English",
+        ),
+        encoding="utf-8",
+    )
+    (DOCS / "privacy-en.html").write_text(
+        render_page(
+            ROOT / "Privacy_Policy_EN.md",
+            "en",
+            "Privacy Policy",
+            "privacy-cn.html",
+            "中文版",
+        ),
+        encoding="utf-8",
+    )
+    print(f"Generated pages in {DOCS}")
+
+
+if __name__ == "__main__":
+    main()
