@@ -1,15 +1,15 @@
 # AuraTime 隐私政策
 
-**最后更新日期**：2026 年 5 月 15 日  
+**最后更新日期**：2026 年 5 月 16 日  
 **生效日期**：2026 年 5 月 15 日
 
 ---
 
 ## 📱 引言
 
-AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐私 policy 说明了我们如何收集、使用、存储 和保护 您的个人信息。当您使用 AuraTime 应用程序（以下简称"本应用"）时。
+AuraTime（「我们」）致力于保护您的隐私。本隐私政策说明您使用 AuraTime 应用程序（以下简称「本应用」）时，我们如何收集、使用、存储和保护相关信息。
 
-**重要**: 本应用**不收集**任何个人 identifiable information（个人身份信息）。我们 respect your privacy by design.
+**重要说明**：本应用**不会**主动收集您的姓名、电子邮件、电话号码等可直接识别个人身份的信息。为改进产品体验，在**您同意或可在设置中关闭**的前提下，我们可能通过 **Google Firebase Analytics** 收集去标识化的使用统计数据（详见下文）。
 
 ---
 
@@ -17,14 +17,13 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 
 ### 1. 不收集的个人信息
 
-本应用**不会**收集以下信息：
-- ❌ 姓名（姓名）
-- ❌ Email address（电子邮件）
-- ❌ Phone number（电话号码）
-- ❌ Location data（位置信息）
-- ❌ Device identifiers（设备标识符）
-- ❌ Usage analytics（使用分析）
-- ❌ Third-party tracking（第三方追踪）
+本应用**不会**由我们主动收集或要求您填写以下信息：
+- ❌ 姓名
+- ❌ 电子邮件地址
+- ❌ 电话号码
+- ❌ 精确地理位置
+
+**说明**：若您在设置中**开启数据分析**，Firebase Analytics 可能按 [Google 隐私政策](https://policies.google.com/privacy) 自动收集设备标识符、IP 地址、应用使用情况等去标识化技术信息。您可随时在 **设置 → 数据分析** 中关闭。
 
 ### 2. 本地存储的数据
 
@@ -76,16 +75,48 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 
 ## 📊 第三方服务
 
-### 我们**不使用**的第三方 Services
+### Firebase Analytics（Google）
 
-本应用**不包含**以下第三方服务：
-- ❌ Analytics SDKs (如 Firebase Analytics, Flurry)
-- ❌ Advertising SDKs (如 AdMob, Unity Ads)
-- ❌ Crash Reporting (如 Crashlytics, Bugly)
-- ❌ Social Media SDKs (如 Facebook SDK, WeChat SDK)
-- ❌ Payment SDKs (内购通过 Apple In-App Purchase)
+本应用集成 **Google Firebase Analytics**，用于了解功能使用情况、改进稳定性与体验。
 
-### 我们**使用**的Apple Services
+| 项目 | 说明 |
+|------|------|
+| **服务提供方** | Google LLC（Firebase） |
+| **处理目的** | 产品分析、功能优化、错误统计 |
+| **默认状态** | 首次安装后默认**开启**；可在应用内关闭 |
+| **关闭方式** | 打开本应用 → **设置** → 关闭 **「启用分析」** |
+| **我们发送的数据** | 见下表「分析事件类型」 |
+| **我们不发送的数据** | 姓名、邮箱、电话、通讯录、照片、精确位置、专注/睡眠日记正文 |
+
+**我们可能记录的分析事件类型**（均为去标识化、聚合用途）：
+
+| 事件类别 | 示例参数 |
+|----------|----------|
+| 应用生命周期 | 打开/关闭应用、会话时长 |
+| 专注/睡眠会话 | 开始、完成、暂停、取消；时长（分钟）；是否完成 |
+| 音频与设置 | 音轨类型（如雨声/篝火/海浪）；设置项变更 |
+| 界面与小组件 | 屏幕浏览名称；小组件点击类型 |
+| 错误 | 错误类型、非个人化错误描述（不含用户输入内容） |
+
+**用户属性**（可选，用于细分统计）：偏好音轨类型、是否调试模式、连续专注天数等汇总信息。
+
+**数据存储与跨境**：Firebase 可能将数据处理于您所在国家/地区以外（如美国）的服务器，并受 Google 安全措施约束。详见：
+
+- [Google 隐私政策](https://policies.google.com/privacy)
+- [Firebase 使用条款](https://firebase.google.com/terms)
+- [Google Analytics for Firebase 数据收集说明](https://firebase.google.com/support/privacy)
+
+关闭数据分析后，我们将停止通过 Firebase 收集新的分析事件；Google 侧已收集数据的保留与删除适用 Google 相关政策。
+
+### 我们**不使用**的其他第三方服务
+
+本应用**不包含**：
+- ❌ 第三方广告 SDK（如 AdMob）
+- ❌ 独立崩溃上报 SDK（如 Crashlytics；错误事件仅通过 Firebase Analytics 记录）
+- ❌ 社交媒体 SDK（如 Facebook、微信 SDK）
+- ❌ 第三方支付 SDK（内购由 Apple 处理）
+
+### 我们**使用**的 Apple 服务
 
 | Service | 用途 | 数据共享 |
 |---------|------|----------|
@@ -99,7 +130,7 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 
 ### 本地数据安全
 
-由于本应用不收集任何个人信息，data security primarily concerns:
+除可选的 Firebase 分析外，本应用不收集可识别个人身份的信息。数据安全主要包括：
 
 1. **Device Security**: 您的设备应由您通过 passcode/biometrics 保护
 2. **iCloud Backup**: 如启用 iCloud 备份，数据将 encrypted by Apple
@@ -118,11 +149,11 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 
 本应用适合所有 ages，包括 children under 13。
 
-由于本应用：
-- ❌ 不收集 any personal information
-- ❌ 不 display third-party ads
-- ❌ 不 contain social media integration
-- ❌ 不 use behavioral tracking
+本应用：
+- ❌ 不展示第三方广告
+- ❌ 不含社交媒体集成
+- ✅ 家长可在设置中关闭数据分析
+- ❌ 不收集儿童姓名、联系方式等个人信息
 
 我们 comply with:
 - 美国 COPPA (Children's Online Privacy Protection Act)
@@ -133,10 +164,9 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 
 ## 🌍 数据跨境传输
 
-**本应用不涉及数据跨境传输**，因为：
-- 所有数据 stored locally on your device
-- 不 transmitted to any servers (ours or third-party)
-- 如启用 iCloud 备份，数据由 Apple 处理 (受 Apple 的 privacy policy 约束)
+- **本地数据**（专注记录、设置等）仅存储在您的设备，由我们直接访问。
+- **Firebase Analytics**（若开启）：数据可能传输至 Google 境外服务器，适用 Google 隐私政策与安全措施。
+- **iCloud 备份**（若由您开启）：由 Apple 处理，适用 Apple 隐私政策。
 
 ---
 
@@ -161,8 +191,9 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 您可以 export 您的数据：
 - 功能开发中 (计划支持 export to CSV)
 
-### 5. Right to Withdraw Consent (撤回同意权)
-不适用，因为本应用不 require consent for data processing.
+### 5. 撤回同意 / 退出分析（撤回同意权）
+
+您可随时在 **设置 → 启用分析** 中关闭 Firebase Analytics，关闭后不再发送新的分析数据。
 
 ---
 
@@ -211,10 +242,10 @@ AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐�
 
 | 条款 | 我们的承诺 |
 |------|-----------|
-| **数据收集** | ❌ 不收集任何 personal identifiable information |
-| **数据存储** | 💾 仅存储在您的设备本地 |
-| **数据共享** | 🔒 不与任何 third parties 共享 |
-| **数据分析** | ❌ 不使用 any analytics or tracking |
+| **个人身份信息** | ❌ 不收集姓名、邮箱、电话等 |
+| **本地数据** | 💾 专注/睡眠记录仅存于设备 |
+| **产品分析** | 📊 可选 Firebase Analytics，默认开启，可随时关闭 |
+| **数据共享** | 🔒 不向第三方出售数据；分析数据按 Google 政策处理 |
 | **广告** | ❌ 不 display third-party ads |
 | **儿童隐私** | ✅ 符合 COPPA 和其他儿童隐私保护法规 |
 | **数据安全** | 🔐 依赖 iOS sandbox 和 device security |

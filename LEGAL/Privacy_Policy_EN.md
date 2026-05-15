@@ -1,6 +1,6 @@
 # AuraTime Privacy Policy
 
-**Last Updated**: May 15, 2026  
+**Last Updated**: May 16, 2026  
 **Effective Date**: May 15, 2026
 
 ---
@@ -9,7 +9,7 @@
 
 AuraTime ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use the AuraTime application (the "App").
 
-**Important**: This App does **NOT collect** any personally identifiable information. We respect your privacy by design.
+**Important**: We do **not** collect information that directly identifies you, such as your name, email address, or phone number. To improve the App, and **only when enabled (you can turn this off in Settings)**, we use **Google Firebase Analytics** to collect de-identified usage statistics as described below.
 
 ---
 
@@ -17,14 +17,13 @@ AuraTime ("we", "our", or "us") is committed to protecting your privacy. This Pr
 
 ### 1. Personal Information We DO NOT Collect
 
-This App does **NOT** collect:
+We do **not** ask you to provide:
 - ❌ Name
 - ❌ Email address
 - ❌ Phone number
-- ❌ Location data
-- ❌ Device identifiers
-- ❌ Usage analytics
-- ❌ Third-party tracking
+- ❌ Precise location
+
+**Note**: If you leave **Analytics** enabled in Settings, Firebase Analytics may automatically collect de-identified technical information (such as device identifiers, IP address, and usage data) as described in [Google's Privacy Policy](https://policies.google.com/privacy). You can disable this at any time under **Settings → Enable Analytics**.
 
 ### 2. Data Stored Locally
 
@@ -76,14 +75,46 @@ This App uses Background Audio mode to:
 
 ## 📊 Third-Party Services
 
-### Third-Party Services We DO NOT Use
+### Firebase Analytics (Google)
 
-This App does **NOT** contain:
-- ❌ Analytics SDKs (e.g., Firebase Analytics, Flurry)
-- ❌ Advertising SDKs (e.g., AdMob, Unity Ads)
-- ❌ Crash Reporting (e.g., Crashlytics, Bugly)
-- ❌ Social Media SDKs (e.g., Facebook SDK, WeChat SDK)
-- ❌ Payment SDKs (In-App Purchase via Apple)
+This App integrates **Google Firebase Analytics** to understand feature usage and improve stability and user experience.
+
+| Item | Details |
+|------|---------|
+| **Provider** | Google LLC (Firebase) |
+| **Purpose** | Product analytics, feature improvement, error statistics |
+| **Default** | **Enabled** on first launch; you can disable it in Settings |
+| **How to opt out** | Open the App → **Settings** → turn off **Enable Analytics** |
+| **Data we send** | See “Analytics events” below |
+| **Data we do not send** | Name, email, phone, contacts, photos, precise location, or the text/content of your focus/sleep journal |
+
+**Analytics events we may log** (de-identified, aggregated):
+
+| Category | Example parameters |
+|----------|-------------------|
+| App lifecycle | App open/close, session duration |
+| Focus / sleep sessions | Start, complete, pause, cancel; duration (minutes); completion status |
+| Audio & settings | Audio track type (e.g., rain, fire, ocean); setting changes |
+| UI & widgets | Screen names; widget interaction types |
+| Errors | Error type; non-personal error descriptions (no user-entered content) |
+
+**User properties** (optional, for segmentation): preferred audio track, debug mode flag, streak-related aggregates, etc.
+
+**Storage & international transfers**: Firebase may process data on servers outside your country (e.g., the United States), subject to Google's safeguards. See:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [Firebase Terms of Service](https://firebase.google.com/terms)
+- [Firebase / Google Analytics data collection](https://firebase.google.com/support/privacy)
+
+After you disable Analytics, we stop sending new events to Firebase. Retention and deletion of data already held by Google are governed by Google's policies.
+
+### Other Third-Party Services We Do NOT Use
+
+This App does **not** include:
+- ❌ Third-party advertising SDKs (e.g., AdMob)
+- ❌ Standalone crash reporting SDKs (e.g., Crashlytics; errors may be logged via Firebase Analytics only)
+- ❌ Social media SDKs (e.g., Facebook, WeChat)
+- ❌ Third-party payment SDKs (purchases are handled by Apple)
 
 ### Apple Services We Use
 
@@ -99,7 +130,7 @@ This App does **NOT** contain:
 
 ### Local Data Security
 
-Since this App does not collect any personal information, data security primarily concerns:
+Aside from optional Firebase Analytics, we do not collect personally identifiable information. Data security primarily concerns:
 
 1. **Device Security**: Your device should be protected by passcode/biometrics
 2. **iCloud Backup**: If enabled, data is encrypted by Apple
@@ -118,11 +149,11 @@ All in-app purchase transactions are processed through Apple's In-App Purchase s
 
 This App is suitable for all ages, including children under 13.
 
-Since this App:
-- ❌ Does not collect any personal information
+This App:
 - ❌ Does not display third-party ads
 - ❌ Does not contain social media integration
-- ❌ Does not use behavioral tracking
+- ✅ Allows parents/guardians to disable Analytics in Settings
+- ❌ Does not collect children's names, contact details, or similar personal information
 
 We comply with:
 - US COPPA (Children's Online Privacy Protection Act)
@@ -133,10 +164,9 @@ We comply with:
 
 ## 🌍 International Data Transfers
 
-**This App does not involve international data transfers** because:
-- All data is stored locally on your device
-- Not transmitted to any servers (ours or third-party)
-- If iCloud Backup is enabled, data is handled by Apple (subject to Apple's privacy policy)
+- **Local data** (focus records, settings, etc.) stays on your device and is not accessible by us directly.
+- **Firebase Analytics** (if enabled): data may be transferred to Google's servers outside your country, subject to Google's privacy policy and security measures.
+- **iCloud Backup** (if you enable it): handled by Apple under Apple's privacy policy.
 
 ---
 
@@ -161,8 +191,9 @@ You can delete all data:
 You can export your data:
 - Feature in development (planned: export to CSV)
 
-### 5. Right to Withdraw Consent
-Not applicable, as this App does not require consent for data processing.
+### 5. Right to Withdraw Consent / Opt Out of Analytics
+
+You can disable Firebase Analytics at any time under **Settings → Enable Analytics**. After you turn it off, we stop sending new analytics events.
 
 ---
 
@@ -211,10 +242,10 @@ This Privacy Policy is governed by:
 
 | Term | Our Commitment |
 |------|----------------|
-| **Data Collection** | ❌ No personally identifiable information collected |
-| **Data Storage** | 💾 Stored only locally on your device |
-| **Data Sharing** | 🔒 Not shared with any third parties |
-| **Analytics** | ❌ No analytics or tracking used |
+| **Personal identity** | ❌ No name, email, or phone collected |
+| **Local data** | 💾 Focus/sleep records stored on device only |
+| **Product analytics** | 📊 Optional Firebase Analytics; on by default; can be disabled |
+| **Data sharing** | 🔒 We do not sell data; analytics processed per Google's policies |
 | **Advertising** | ❌ No third-party ads displayed |
 | **Children's Privacy** | ✅ Compliant with COPPA and other regulations |
 | **Data Security** | 🔐 Rely on iOS sandbox and device security |

@@ -46,23 +46,21 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
     </nav>
     <article>
 <h1>AuraTime Privacy Policy</h1>
-<p><strong>Last Updated</strong>: May 15, 2026<br />
+<p><strong>Last Updated</strong>: May 16, 2026<br />
 <strong>Effective Date</strong>: May 15, 2026</p>
 <hr />
 <h2>📱 Introduction</h2>
 <p>AuraTime ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information when you use the AuraTime application (the "App").</p>
-<p><strong>Important</strong>: This App does <strong>NOT collect</strong> any personally identifiable information. We respect your privacy by design.</p>
+<p><strong>Important</strong>: We do <strong>not</strong> collect information that directly identifies you, such as your name, email address, or phone number. To improve the App, and <strong>only when enabled (you can turn this off in Settings)</strong>, we use <strong>Google Firebase Analytics</strong> to collect de-identified usage statistics as described below.</p>
 <hr />
 <h2>🔍 Information We Collect</h2>
 <h3>1. Personal Information We DO NOT Collect</h3>
-<p>This App does <strong>NOT</strong> collect:<br />
+<p>We do <strong>not</strong> ask you to provide:<br />
 - ❌ Name<br />
 - ❌ Email address<br />
 - ❌ Phone number<br />
-- ❌ Location data<br />
-- ❌ Device identifiers<br />
-- ❌ Usage analytics<br />
-- ❌ Third-party tracking</p>
+- ❌ Precise location</p>
+<p><strong>Note</strong>: If you leave <strong>Analytics</strong> enabled in Settings, Firebase Analytics may automatically collect de-identified technical information (such as device identifiers, IP address, and usage data) as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can disable this at any time under <strong>Settings → Enable Analytics</strong>.</p>
 <h3>2. Data Stored Locally</h3>
 <p>This App stores the following data <strong>only on your device</strong>, <strong>NOT</strong> uploaded to any server:</p>
 <table>
@@ -120,13 +118,87 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <p><strong>Note</strong>: Audio files are bundled with the app, no streaming from external servers.</p>
 <hr />
 <h2>📊 Third-Party Services</h2>
-<h3>Third-Party Services We DO NOT Use</h3>
-<p>This App does <strong>NOT</strong> contain:<br />
-- ❌ Analytics SDKs (e.g., Firebase Analytics, Flurry)<br />
-- ❌ Advertising SDKs (e.g., AdMob, Unity Ads)<br />
-- ❌ Crash Reporting (e.g., Crashlytics, Bugly)<br />
-- ❌ Social Media SDKs (e.g., Facebook SDK, WeChat SDK)<br />
-- ❌ Payment SDKs (In-App Purchase via Apple)</p>
+<h3>Firebase Analytics (Google)</h3>
+<p>This App integrates <strong>Google Firebase Analytics</strong> to understand feature usage and improve stability and user experience.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Provider</strong></td>
+<td>Google LLC (Firebase)</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Product analytics, feature improvement, error statistics</td>
+</tr>
+<tr>
+<td><strong>Default</strong></td>
+<td><strong>Enabled</strong> on first launch; you can disable it in Settings</td>
+</tr>
+<tr>
+<td><strong>How to opt out</strong></td>
+<td>Open the App → <strong>Settings</strong> → turn off <strong>Enable Analytics</strong></td>
+</tr>
+<tr>
+<td><strong>Data we send</strong></td>
+<td>See “Analytics events” below</td>
+</tr>
+<tr>
+<td><strong>Data we do not send</strong></td>
+<td>Name, email, phone, contacts, photos, precise location, or the text/content of your focus/sleep journal</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analytics events we may log</strong> (de-identified, aggregated):</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Example parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App lifecycle</td>
+<td>App open/close, session duration</td>
+</tr>
+<tr>
+<td>Focus / sleep sessions</td>
+<td>Start, complete, pause, cancel; duration (minutes); completion status</td>
+</tr>
+<tr>
+<td>Audio &amp; settings</td>
+<td>Audio track type (e.g., rain, fire, ocean); setting changes</td>
+</tr>
+<tr>
+<td>UI &amp; widgets</td>
+<td>Screen names; widget interaction types</td>
+</tr>
+<tr>
+<td>Errors</td>
+<td>Error type; non-personal error descriptions (no user-entered content)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>User properties</strong> (optional, for segmentation): preferred audio track, debug mode flag, streak-related aggregates, etc.</p>
+<p><strong>Storage &amp; international transfers</strong>: Firebase may process data on servers outside your country (e.g., the United States), subject to Google's safeguards. See:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://firebase.google.com/terms">Firebase Terms of Service</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Firebase / Google Analytics data collection</a></li>
+</ul>
+<p>After you disable Analytics, we stop sending new events to Firebase. Retention and deletion of data already held by Google are governed by Google's policies.</p>
+<h3>Other Third-Party Services We Do NOT Use</h3>
+<p>This App does <strong>not</strong> include:<br />
+- ❌ Third-party advertising SDKs (e.g., AdMob)<br />
+- ❌ Standalone crash reporting SDKs (e.g., Crashlytics; errors may be logged via Firebase Analytics only)<br />
+- ❌ Social media SDKs (e.g., Facebook, WeChat)<br />
+- ❌ Third-party payment SDKs (purchases are handled by Apple)</p>
 <h3>Apple Services We Use</h3>
 <table>
 <thead>
@@ -157,7 +229,7 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <hr />
 <h2>🔒 Data Security</h2>
 <h3>Local Data Security</h3>
-<p>Since this App does not collect any personal information, data security primarily concerns:</p>
+<p>Aside from optional Firebase Analytics, we do not collect personally identifiable information. Data security primarily concerns:</p>
 <ol>
 <li><strong>Device Security</strong>: Your device should be protected by passcode/biometrics</li>
 <li><strong>iCloud Backup</strong>: If enabled, data is encrypted by Apple</li>
@@ -171,21 +243,22 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <hr />
 <h2>👶 Children's Privacy</h2>
 <p>This App is suitable for all ages, including children under 13.</p>
-<p>Since this App:<br />
-- ❌ Does not collect any personal information<br />
+<p>This App:<br />
 - ❌ Does not display third-party ads<br />
 - ❌ Does not contain social media integration<br />
-- ❌ Does not use behavioral tracking</p>
+- ✅ Allows parents/guardians to disable Analytics in Settings<br />
+- ❌ Does not collect children's names, contact details, or similar personal information</p>
 <p>We comply with:<br />
 - US COPPA (Children's Online Privacy Protection Act)<br />
 - EU GDPR-K (General Data Protection Regulation for Kids)<br />
 - China Children's Personal Information Network Protection Regulations</p>
 <hr />
 <h2>🌍 International Data Transfers</h2>
-<p><strong>This App does not involve international data transfers</strong> because:<br />
-- All data is stored locally on your device<br />
-- Not transmitted to any servers (ours or third-party)<br />
-- If iCloud Backup is enabled, data is handled by Apple (subject to Apple's privacy policy)</p>
+<ul>
+<li><strong>Local data</strong> (focus records, settings, etc.) stays on your device and is not accessible by us directly.</li>
+<li><strong>Firebase Analytics</strong> (if enabled): data may be transferred to Google's servers outside your country, subject to Google's privacy policy and security measures.</li>
+<li><strong>iCloud Backup</strong> (if you enable it): handled by Apple under Apple's privacy policy.</li>
+</ul>
 <hr />
 <h2>📝 Your Rights</h2>
 <p>Under applicable privacy laws (e.g., GDPR, CCPA), you have the following rights:</p>
@@ -202,8 +275,8 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <h3>4. Right to Data Portability</h3>
 <p>You can export your data:<br />
 - Feature in development (planned: export to CSV)</p>
-<h3>5. Right to Withdraw Consent</h3>
-<p>Not applicable, as this App does not require consent for data processing.</p>
+<h3>5. Right to Withdraw Consent / Opt Out of Analytics</h3>
+<p>You can disable Firebase Analytics at any time under <strong>Settings → Enable Analytics</strong>. After you turn it off, we stop sending new analytics events.</p>
 <hr />
 <h2>🔔 Changes to This Privacy Policy</h2>
 <p>We may periodically update this Privacy Policy.</p>
@@ -265,20 +338,20 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </thead>
 <tbody>
 <tr>
-<td><strong>Data Collection</strong></td>
-<td>❌ No personally identifiable information collected</td>
+<td><strong>Personal identity</strong></td>
+<td>❌ No name, email, or phone collected</td>
 </tr>
 <tr>
-<td><strong>Data Storage</strong></td>
-<td>💾 Stored only locally on your device</td>
+<td><strong>Local data</strong></td>
+<td>💾 Focus/sleep records stored on device only</td>
 </tr>
 <tr>
-<td><strong>Data Sharing</strong></td>
-<td>🔒 Not shared with any third parties</td>
+<td><strong>Product analytics</strong></td>
+<td>📊 Optional Firebase Analytics; on by default; can be disabled</td>
 </tr>
 <tr>
-<td><strong>Analytics</strong></td>
-<td>❌ No analytics or tracking used</td>
+<td><strong>Data sharing</strong></td>
+<td>🔒 We do not sell data; analytics processed per Google's policies</td>
 </tr>
 <tr>
 <td><strong>Advertising</strong></td>

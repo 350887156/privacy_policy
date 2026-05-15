@@ -46,23 +46,21 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
     </nav>
     <article>
 <h1>AuraTime 隐私政策</h1>
-<p><strong>最后更新日期</strong>：2026 年 5 月 15 日<br />
+<p><strong>最后更新日期</strong>：2026 年 5 月 16 日<br />
 <strong>生效日期</strong>：2026 年 5 月 15 日</p>
 <hr />
 <h2>📱 引言</h2>
-<p>AuraTime（"我们"、"我们的"或"us"）致力于保护您的隐私。本隐私 policy 说明了我们如何收集、使用、存储 和保护 您的个人信息。当您使用 AuraTime 应用程序（以下简称"本应用"）时。</p>
-<p><strong>重要</strong>: 本应用<strong>不收集</strong>任何个人 identifiable information（个人身份信息）。我们 respect your privacy by design.</p>
+<p>AuraTime（「我们」）致力于保护您的隐私。本隐私政策说明您使用 AuraTime 应用程序（以下简称「本应用」）时，我们如何收集、使用、存储和保护相关信息。</p>
+<p><strong>重要说明</strong>：本应用<strong>不会</strong>主动收集您的姓名、电子邮件、电话号码等可直接识别个人身份的信息。为改进产品体验，在<strong>您同意或可在设置中关闭</strong>的前提下，我们可能通过 <strong>Google Firebase Analytics</strong> 收集去标识化的使用统计数据（详见下文）。</p>
 <hr />
 <h2>🔍 我们收集的信息</h2>
 <h3>1. 不收集的个人信息</h3>
-<p>本应用<strong>不会</strong>收集以下信息：<br />
-- ❌ 姓名（姓名）<br />
-- ❌ Email address（电子邮件）<br />
-- ❌ Phone number（电话号码）<br />
-- ❌ Location data（位置信息）<br />
-- ❌ Device identifiers（设备标识符）<br />
-- ❌ Usage analytics（使用分析）<br />
-- ❌ Third-party tracking（第三方追踪）</p>
+<p>本应用<strong>不会</strong>由我们主动收集或要求您填写以下信息：<br />
+- ❌ 姓名<br />
+- ❌ 电子邮件地址<br />
+- ❌ 电话号码<br />
+- ❌ 精确地理位置</p>
+<p><strong>说明</strong>：若您在设置中<strong>开启数据分析</strong>，Firebase Analytics 可能按 <a href="https://policies.google.com/privacy">Google 隐私政策</a> 自动收集设备标识符、IP 地址、应用使用情况等去标识化技术信息。您可随时在 <strong>设置 → 数据分析</strong> 中关闭。</p>
 <h3>2. 本地存储的数据</h3>
 <p>本应用仅在您的设备本地存储以下数据，<strong>不会</strong>上传到任何服务器：</p>
 <table>
@@ -120,14 +118,88 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <p><strong>说明</strong>：音频文件 bundled with the app，no streaming from external servers.</p>
 <hr />
 <h2>📊 第三方服务</h2>
-<h3>我们<strong>不使用</strong>的第三方 Services</h3>
-<p>本应用<strong>不包含</strong>以下第三方服务：<br />
-- ❌ Analytics SDKs (如 Firebase Analytics, Flurry)<br />
-- ❌ Advertising SDKs (如 AdMob, Unity Ads)<br />
-- ❌ Crash Reporting (如 Crashlytics, Bugly)<br />
-- ❌ Social Media SDKs (如 Facebook SDK, WeChat SDK)<br />
-- ❌ Payment SDKs (内购通过 Apple In-App Purchase)</p>
-<h3>我们<strong>使用</strong>的Apple Services</h3>
+<h3>Firebase Analytics（Google）</h3>
+<p>本应用集成 <strong>Google Firebase Analytics</strong>，用于了解功能使用情况、改进稳定性与体验。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>服务提供方</strong></td>
+<td>Google LLC（Firebase）</td>
+</tr>
+<tr>
+<td><strong>处理目的</strong></td>
+<td>产品分析、功能优化、错误统计</td>
+</tr>
+<tr>
+<td><strong>默认状态</strong></td>
+<td>首次安装后默认<strong>开启</strong>；可在应用内关闭</td>
+</tr>
+<tr>
+<td><strong>关闭方式</strong></td>
+<td>打开本应用 → <strong>设置</strong> → 关闭 <strong>「启用分析」</strong></td>
+</tr>
+<tr>
+<td><strong>我们发送的数据</strong></td>
+<td>见下表「分析事件类型」</td>
+</tr>
+<tr>
+<td><strong>我们不发送的数据</strong></td>
+<td>姓名、邮箱、电话、通讯录、照片、精确位置、专注/睡眠日记正文</td>
+</tr>
+</tbody>
+</table>
+<p><strong>我们可能记录的分析事件类型</strong>（均为去标识化、聚合用途）：</p>
+<table>
+<thead>
+<tr>
+<th>事件类别</th>
+<th>示例参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>应用生命周期</td>
+<td>打开/关闭应用、会话时长</td>
+</tr>
+<tr>
+<td>专注/睡眠会话</td>
+<td>开始、完成、暂停、取消；时长（分钟）；是否完成</td>
+</tr>
+<tr>
+<td>音频与设置</td>
+<td>音轨类型（如雨声/篝火/海浪）；设置项变更</td>
+</tr>
+<tr>
+<td>界面与小组件</td>
+<td>屏幕浏览名称；小组件点击类型</td>
+</tr>
+<tr>
+<td>错误</td>
+<td>错误类型、非个人化错误描述（不含用户输入内容）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>用户属性</strong>（可选，用于细分统计）：偏好音轨类型、是否调试模式、连续专注天数等汇总信息。</p>
+<p><strong>数据存储与跨境</strong>：Firebase 可能将数据处理于您所在国家/地区以外（如美国）的服务器，并受 Google 安全措施约束。详见：</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google 隐私政策</a></li>
+<li><a href="https://firebase.google.com/terms">Firebase 使用条款</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase 数据收集说明</a></li>
+</ul>
+<p>关闭数据分析后，我们将停止通过 Firebase 收集新的分析事件；Google 侧已收集数据的保留与删除适用 Google 相关政策。</p>
+<h3>我们<strong>不使用</strong>的其他第三方服务</h3>
+<p>本应用<strong>不包含</strong>：<br />
+- ❌ 第三方广告 SDK（如 AdMob）<br />
+- ❌ 独立崩溃上报 SDK（如 Crashlytics；错误事件仅通过 Firebase Analytics 记录）<br />
+- ❌ 社交媒体 SDK（如 Facebook、微信 SDK）<br />
+- ❌ 第三方支付 SDK（内购由 Apple 处理）</p>
+<h3>我们<strong>使用</strong>的 Apple 服务</h3>
 <table>
 <thead>
 <tr>
@@ -157,7 +229,7 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <hr />
 <h2>🔒 数据安全</h2>
 <h3>本地数据安全</h3>
-<p>由于本应用不收集任何个人信息，data security primarily concerns:</p>
+<p>除可选的 Firebase 分析外，本应用不收集可识别个人身份的信息。数据安全主要包括：</p>
 <ol>
 <li><strong>Device Security</strong>: 您的设备应由您通过 passcode/biometrics 保护</li>
 <li><strong>iCloud Backup</strong>: 如启用 iCloud 备份，数据将 encrypted by Apple</li>
@@ -171,21 +243,22 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <hr />
 <h2>👶 儿童隐私</h2>
 <p>本应用适合所有 ages，包括 children under 13。</p>
-<p>由于本应用：<br />
-- ❌ 不收集 any personal information<br />
-- ❌ 不 display third-party ads<br />
-- ❌ 不 contain social media integration<br />
-- ❌ 不 use behavioral tracking</p>
+<p>本应用：<br />
+- ❌ 不展示第三方广告<br />
+- ❌ 不含社交媒体集成<br />
+- ✅ 家长可在设置中关闭数据分析<br />
+- ❌ 不收集儿童姓名、联系方式等个人信息</p>
 <p>我们 comply with:<br />
 - 美国 COPPA (Children's Online Privacy Protection Act)<br />
 - 欧盟 GDPR-K (General Data Protection Regulation for Kids)<br />
 - 中国 儿童个人信息网络保护规定</p>
 <hr />
 <h2>🌍 数据跨境传输</h2>
-<p><strong>本应用不涉及数据跨境传输</strong>，因为：<br />
-- 所有数据 stored locally on your device<br />
-- 不 transmitted to any servers (ours or third-party)<br />
-- 如启用 iCloud 备份，数据由 Apple 处理 (受 Apple 的 privacy policy 约束)</p>
+<ul>
+<li><strong>本地数据</strong>（专注记录、设置等）仅存储在您的设备，由我们直接访问。</li>
+<li><strong>Firebase Analytics</strong>（若开启）：数据可能传输至 Google 境外服务器，适用 Google 隐私政策与安全措施。</li>
+<li><strong>iCloud 备份</strong>（若由您开启）：由 Apple 处理，适用 Apple 隐私政策。</li>
+</ul>
 <hr />
 <h2>📝 您的权利</h2>
 <p>根据 applicable privacy laws (如 GDPR, CCPA)，您享有以下 rights：</p>
@@ -202,8 +275,8 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <h3>4. Right to Data Portability (可携带权)</h3>
 <p>您可以 export 您的数据：<br />
 - 功能开发中 (计划支持 export to CSV)</p>
-<h3>5. Right to Withdraw Consent (撤回同意权)</h3>
-<p>不适用，因为本应用不 require consent for data processing.</p>
+<h3>5. 撤回同意 / 退出分析（撤回同意权）</h3>
+<p>您可随时在 <strong>设置 → 启用分析</strong> 中关闭 Firebase Analytics，关闭后不再发送新的分析数据。</p>
 <hr />
 <h2>🔔 隐私政策更新</h2>
 <p>我们可能会 periodically update 本 privacy policy。</p>
@@ -265,20 +338,20 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </thead>
 <tbody>
 <tr>
-<td><strong>数据收集</strong></td>
-<td>❌ 不收集任何 personal identifiable information</td>
+<td><strong>个人身份信息</strong></td>
+<td>❌ 不收集姓名、邮箱、电话等</td>
 </tr>
 <tr>
-<td><strong>数据存储</strong></td>
-<td>💾 仅存储在您的设备本地</td>
+<td><strong>本地数据</strong></td>
+<td>💾 专注/睡眠记录仅存于设备</td>
+</tr>
+<tr>
+<td><strong>产品分析</strong></td>
+<td>📊 可选 Firebase Analytics，默认开启，可随时关闭</td>
 </tr>
 <tr>
 <td><strong>数据共享</strong></td>
-<td>🔒 不与任何 third parties 共享</td>
-</tr>
-<tr>
-<td><strong>数据分析</strong></td>
-<td>❌ 不使用 any analytics or tracking</td>
+<td>🔒 不向第三方出售数据；分析数据按 Google 政策处理</td>
 </tr>
 <tr>
 <td><strong>广告</strong></td>
