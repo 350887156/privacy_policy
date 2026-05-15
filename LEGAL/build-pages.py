@@ -63,7 +63,7 @@ INDEX_HTML = """<!DOCTYPE html>
         <li><a href="privacy-en.html">Privacy Policy (English)</a></li>
       </ul>
     </article>
-    <footer>© AuraTime · <a href="mailto:support@auratime.app">support@auratime.app</a></footer>
+    <footer>© AuraTime · <a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></footer>
   </motion></motion>
 </body>
 </html>
@@ -97,7 +97,7 @@ def render_page(md_path: Path, lang: str, title: str, other_lang_href: str, othe
     <article>
 {body}
     </article>
-    <footer>© AuraTime · <a href="mailto:support@auratime.app">support@auratime.app</a></footer>
+    <footer>© AuraTime · <a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></footer>
   </div>
 </body>
 </html>

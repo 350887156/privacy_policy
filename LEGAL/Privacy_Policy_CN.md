@@ -220,9 +220,7 @@ AuraTime（「我们」）致力于保护您的隐私。本隐私政策说明您
 
 | 联系方式 | 详情 |
 |----------|------|
-| **Email** | support@auratime.app |
-| **Website** | www.auratime.app |
-| **地址** | [Your Business Address, Optional] |
+| **电子邮件** | sclea1988@gmail.com |
 
 **Response Time**: We will respond within 30 days.
 

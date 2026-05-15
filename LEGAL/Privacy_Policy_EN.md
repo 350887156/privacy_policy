@@ -220,9 +220,7 @@ If you have any questions about this Privacy Policy, please contact us:
 
 | Contact Method | Details |
 |----------------|---------|
-| **Email** | support@auratime.app |
-| **Website** | www.auratime.app |
-| **Address** | [Your Business Address, Optional] |
+| **Email** | sclea1988@gmail.com |
 
 **Response Time**: We will respond within 30 days.
 
