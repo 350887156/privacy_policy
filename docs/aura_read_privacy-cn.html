@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私政策</title>
+  <style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: #e8e8ed;
+  background: linear-gradient(160deg, #0a0a0f 0%, #12121a 50%, #0d1118 100%);
+  min-height: 100vh;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+header h1 { margin: 0 0 8px; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+header p { margin: 0; color: #8e8e93; font-size: 0.95rem; }
+nav { margin-bottom: 28px; font-size: 0.9rem; }
+nav a { color: #64b5f6; text-decoration: none; margin-right: 16px; }
+nav a:hover { text-decoration: underline; }
+article h2 { margin-top: 2rem; font-size: 1.25rem; color: #f5f5f7; }
+article h3 { margin-top: 1.5rem; font-size: 1.05rem; color: #d1d1d6; }
+article p, article li { color: #c7c7cc; }
+article a { color: #64b5f6; }
+article hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 2rem 0; }
+article code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+article table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+article th, article td { border: 1px solid rgba(255,255,255,0.1); padding: 8px 12px; text-align: left; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); color: #636366; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <h1>AuraRead</h1>
+      <p>隐私政策</p>
+    </header>
+    <nav>
+      <a href="privacy-en.html">English</a>
+    </nav>
+    <article>
+<h1>AuraRead 隐私政策</h1>
+<p><strong>最后更新日期</strong>：2026 年 5 月 16 日<br />
+<strong>生效日期</strong>：2026 年 5 月 16 日</p>
+<hr />
+<h2>📱 引言</h2>
+<p>AuraRead（「我们」）是一款<strong>本地电子书阅读工具</strong>。我们致力于保护您的隐私。本隐私政策说明您使用 AuraRead 应用程序（以下简称「本应用」，Bundle ID：<code>com.aura.reader</code>）时，我们如何收集、使用、存储和保护相关信息。</p>
+<p><strong>重要说明</strong>：</p>
+<ul>
+<li>本应用<strong>不会</strong>主动收集您的姓名、电子邮件、电话号码等可直接识别个人身份的信息。</li>
+<li>您导入的书籍文件、阅读进度与统计等数据<strong>默认仅存储在您的设备本地</strong>，我们不会运营用于存储您书库的服务器。</li>
+<li>为改进产品体验，在<strong>您同意或可在设置中关闭</strong>的前提下，我们可能通过 <strong>Google Firebase Analytics</strong> 收集去标识化的使用统计数据（详见下文）。<strong>我们不会</strong>通过 Firebase 上传书籍正文、章节内容或文件名等书库内容。</li>
+</ul>
+<hr />
+<h2>🔍 我们收集的信息</h2>
+<h3>1. 不收集的个人信息</h3>
+<p>本应用<strong>不会</strong>由我们主动收集或要求您填写以下信息：</p>
+<ul>
+<li>❌ 姓名</li>
+<li>❌ 电子邮件地址</li>
+<li>❌ 电话号码</li>
+<li>❌ 精确地理位置</li>
+<li>❌ 通讯录、照片图库（除您主动通过系统文件选择器导入书籍外）</li>
+</ul>
+<p><strong>说明</strong>：若您在设置中<strong>开启数据分析</strong>，Firebase Analytics 可能按 <a href="https://policies.google.com/privacy">Google 隐私政策</a> 自动收集设备标识符、IP 地址、应用使用情况等去标识化技术信息。您可随时在 <strong>设置 → 启用分析</strong> 中关闭。</p>
+<h3>2. 本地存储的数据</h3>
+<p>本应用仅在您的设备本地存储以下数据，<strong>不会上传至我们的服务器</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>用途</th>
+<th>存储位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>书籍文件</td>
+<td>阅读 TXT、EPUB、MOBI 等格式</td>
+<td>应用沙盒 <code>Documents/Books</code></td>
+</tr>
+<tr>
+<td>书架与元数据</td>
+<td>书名、封面、进度、章节等</td>
+<td>本地 Core Data</td>
+</tr>
+<tr>
+<td>阅读会话记录</td>
+<td>阅读时长统计、热力图等</td>
+<td>本地 Core Data</td>
+</tr>
+<tr>
+<td>阅读设置</td>
+<td>字体、主题、翻页动画等偏好</td>
+<td>本地 Core Data / UserDefaults</td>
+</tr>
+<tr>
+<td>应用设置</td>
+<td>外观、语言等</td>
+<td>本地 UserDefaults</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明</strong>：上述数据由您使用本应用产生或导入；除下文「网页导入」所述的<strong>同一局域网内</strong>传输外，我们不会从您的设备取走这些数据。</p>
+<hr />
+<h2>🛠 我们使用的技术与权限</h2>
+<h3>1. 文件导入（文件 App / 共享 / 打开方式）</h3>
+<p>您可通过系统文件选择器、其他 App 的「共享」或「用 AuraRead 打开」将电子书导入本应用。导入的文件将复制或保存到本应用沙盒内，<strong>仅用于在本机阅读</strong>。</p>
+<h3>2. 网页导入（本地网络）</h3>
+<p>在<strong>设置 → 网页导入</strong>中，本应用可在您的 iPhone / iPad 上启动<strong>本地 HTTP 服务</strong>（基于开源库 GCDWebServer），以便在同一 Wi‑Fi 下的电脑浏览器中上传书籍。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>网络范围</strong></td>
+<td>仅限您设备所在的本地局域网；不连接我们的云端服务器</td>
+</tr>
+<tr>
+<td><strong>数据传输</strong></td>
+<td>上传的文件直接写入本机书库，不经由我们中转</td>
+</tr>
+<tr>
+<td><strong>系统权限</strong></td>
+<td>「本地网络」权限（<code>NSLocalNetworkUsageDescription</code>）；Bonjour 服务类型 <code>_http._tcp</code></td>
+</tr>
+<tr>
+<td><strong>使用注意</strong></td>
+<td>服务仅在您开启网页导入且应用保持前台时运行；离开相关页面后服务停止</td>
+</tr>
+</tbody>
+</table>
+<p><strong>数据流向</strong>：仅在您的局域网内、在您的设备与您的电脑之间传输；我们无从访问。</p>
+<h3>3. 开源组件（设备端处理）</h3>
+<p>本应用使用以下第三方库，均在<strong>设备本地</strong>解析或提供网页导入服务，不将您的书库内容发送至开发者服务器：</p>
+<ul>
+<li><strong>GCDWebServer</strong>：局域网网页上传</li>
+<li><strong>ZIPFoundation</strong>：EPUB 等压缩包解析</li>
+<li><strong>Kanna</strong>：HTML/XML 解析</li>
+</ul>
+<h3>4. 我们当前未使用的功能</h3>
+<p>截至本政策生效日，本应用<strong>未提供</strong>且<strong>未启用</strong>：</p>
+<ul>
+<li>❌ iCloud 同步（规划中功能，尚未上线）</li>
+<li>❌ 账号登录与云端书库</li>
+<li>❌ 推送通知营销</li>
+<li>❌ 内置书城或内容分发</li>
+</ul>
+<hr />
+<h2>📊 第三方服务</h2>
+<h3>Firebase Analytics（Google）</h3>
+<p>本应用集成 <strong>Google Firebase Analytics</strong>，用于了解功能使用情况、改进稳定性与体验。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>服务提供方</strong></td>
+<td>Google LLC（Firebase）</td>
+</tr>
+<tr>
+<td><strong>处理目的</strong></td>
+<td>产品分析、功能优化、错误统计</td>
+</tr>
+<tr>
+<td><strong>默认状态</strong></td>
+<td>首次安装后默认<strong>开启</strong>；可在应用内关闭</td>
+</tr>
+<tr>
+<td><strong>关闭方式</strong></td>
+<td>打开本应用 → <strong>设置</strong> → 关闭 <strong>「启用分析」</strong></td>
+</tr>
+<tr>
+<td><strong>我们发送的数据</strong></td>
+<td>见下表「分析事件类型」</td>
+</tr>
+<tr>
+<td><strong>我们不发送的数据</strong></td>
+<td>姓名、邮箱、电话、通讯录、照片、精确位置、书籍正文、章节内容、书名、作者、文件名</td>
+</tr>
+</tbody>
+</table>
+<p><strong>我们可能记录的分析事件类型</strong>（均为去标识化、聚合用途）：</p>
+<table>
+<thead>
+<tr>
+<th>事件类别</th>
+<th>示例参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>应用生命周期</td>
+<td>打开/关闭应用、会话时长</td>
+</tr>
+<tr>
+<td>阅读行为</td>
+<td>打开阅读器、书籍格式（如 epub/txt）；不含书名或内容</td>
+</tr>
+<tr>
+<td>书籍导入</td>
+<td>导入来源（文件/共享/网页）、格式、是否重复</td>
+</tr>
+<tr>
+<td>网页导入</td>
+<td>单次会话导入数量（不含文件名）</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>主题模式、语言、分析开关等设置项变更</td>
+</tr>
+<tr>
+<td>界面</td>
+<td>屏幕浏览名称（如书架、统计、设置、阅读器）</td>
+</tr>
+<tr>
+<td>错误</td>
+<td>错误类型、非个人化错误描述（不含用户书籍内容）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>用户属性</strong>（可选，用于细分统计）：主题模式、界面语言偏好等汇总信息。</p>
+<p><strong>数据存储与跨境</strong>：Firebase 可能将数据处理于您所在国家/地区以外（如美国）的服务器，并受 Google 安全措施约束。详见：</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google 隐私政策</a></li>
+<li><a href="https://firebase.google.com/terms">Firebase 使用条款</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase 数据收集说明</a></li>
+</ul>
+<p>关闭数据分析后，我们将停止通过 Firebase 收集新的分析事件；Google 侧已收集数据的保留与删除适用 Google 相关政策。</p>
+<h3>我们<strong>不使用</strong>的其他第三方服务</h3>
+<p>本应用<strong>不包含</strong>：</p>
+<ul>
+<li>❌ 第三方广告 SDK</li>
+<li>❌ 独立崩溃上报 SDK（如 Crashlytics；错误事件仅通过 Firebase Analytics 记录）</li>
+<li>❌ 社交媒体 SDK</li>
+<li>❌ 由我们运营的远程书库或同步服务</li>
+</ul>
+<h3>我们<strong>可能涉及</strong>的 Apple 系统服务</h3>
+<table>
+<thead>
+<tr>
+<th>服务</th>
+<th>用途</th>
+<th>数据共享</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>文件 App / 文档共享</td>
+<td>导入或管理书籍文件（若您在系统设置中允许）</td>
+<td>由您主动操作；数据留在设备或您选择的 iCloud 驱动器</td>
+</tr>
+<tr>
+<td>Apple iCloud 设备备份</td>
+<td>若您开启整机 iCloud 备份，应用沙盒可能随备份加密上传</td>
+<td>由 Apple 按 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 处理</td>
+</tr>
+<tr>
+<td>App Store / 内购（若适用）</td>
+<td>处理购买与订阅</td>
+<td>Apple 处理支付信息；我们不经手银行卡号</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>📖 关于您导入的内容</h2>
+<p>本应用<strong>不提供</strong>任何受版权保护的电子书内容。所有书籍均由<strong>您自行导入</strong>。您应确保对所导入内容拥有合法使用权。我们不对用户导入的内容负责，也无法访问或审查您设备上的书库。</p>
+<hr />
+<h2>🔒 数据安全</h2>
+<ol>
+<li><strong>设备安全</strong>：请使用密码、Face ID 或 Touch ID 保护您的设备。</li>
+<li><strong>沙盒隔离</strong>：应用数据存储在 iOS 沙盒中，其他应用无法直接读取。</li>
+<li><strong>本地网页导入</strong>：仅在您主动开启时监听局域网；建议在可信 Wi‑Fi 环境下使用，用毕关闭服务。</li>
+<li><strong>iCloud 备份</strong>：若您启用 iCloud 备份，备份内容由 Apple 加密保管。</li>
+</ol>
+<hr />
+<h2>👶 儿童隐私</h2>
+<p>本应用为通用阅读工具，不面向 13 岁以下儿童主动收集个人信息。本应用不展示第三方广告，不收集儿童姓名、联系方式等个人信息。若您为监护人并认为孩子向我们提供了信息，请通过下文联系方式与我们联系。</p>
+<hr />
+<h2>🌍 数据跨境传输</h2>
+<ul>
+<li><strong>书库与阅读数据</strong>：默认仅存于您的设备，我们不做跨境传输。</li>
+<li><strong>Firebase Analytics</strong>（若开启）：数据可能传输至 Google 境外服务器，适用 Google 隐私政策与安全措施。</li>
+<li><strong>网页导入</strong>：仅在您的本地网络内传输，不经过我们的服务器。</li>
+<li><strong>Apple 服务</strong>（如 iCloud 备份、App Store）：适用 Apple 相关政策，可能涉及境外数据中心。</li>
+</ul>
+<hr />
+<h2>📝 您的权利</h2>
+<p>根据适用的隐私法律（如 GDPR、CCPA、中国《个人信息保护法》），您享有以下权利：</p>
+<h3>1. 访问权</h3>
+<p>您可在应用内查看书架、阅读进度与统计信息。</p>
+<h3>2. 删除权</h3>
+<ul>
+<li>删除单本书籍：在书架中删除。</li>
+<li>删除全部数据：卸载本应用，或使用系统「设置 → 通用 → iPhone 储存空间」清除应用数据。</li>
+</ul>
+<h3>3. 撤回同意 / 退出分析</h3>
+<p>您可随时在 <strong>设置 → 启用分析</strong> 中关闭 Firebase Analytics。您亦可在 <strong>设置 → 隐私与安全性 → 本地网络</strong> 中关闭 AuraRead 的本地网络权限；网页导入将无法使用，但不影响已导入书籍的本地阅读。</p>
+<h3>4. 数据可携带权</h3>
+<p>您导入的书籍文件存储于应用沙盒；可通过文件共享或重新导出（视系统功能而定）自行备份。</p>
+<hr />
+<h2>🔔 隐私政策更新</h2>
+<p>我们可能不时更新本政策。更新后的版本将发布于本文档，并修订「最后更新日期」。重大变更时，我们可能通过应用内说明或 App Store 更新说明告知您。若您继续使用本应用，即表示接受更新后的政策；若不同意，请停止使用并卸载本应用。</p>
+<hr />
+<h2>📬 联系我们</h2>
+<table>
+<thead>
+<tr>
+<th>联系方式</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>电子邮件</strong></td>
+<td><a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>回复时间</strong>：我们将在 30 日内回复。</p>
+<hr />
+<h2>⚖️ 适用法律与管辖</h2>
+<ul>
+<li><strong>主要适用</strong>：中华人民共和国《网络安全法》《个人信息保护法》</li>
+<li><strong>国际用户</strong>：同时遵守您所在司法辖区的适用法规（如欧盟 GDPR）</li>
+<li><strong>争议解决</strong>：优先友好协商；协商不成的，提交有管辖权的人民法院解决</li>
+</ul>
+<hr />
+<h2>📋 关键条款总结</h2>
+<table>
+<thead>
+<tr>
+<th>条款</th>
+<th>我们的承诺</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>个人身份信息</strong></td>
+<td>❌ 不主动收集姓名、邮箱、电话等</td>
+</tr>
+<tr>
+<td><strong>书库与阅读数据</strong></td>
+<td>💾 默认仅存于您的设备</td>
+</tr>
+<tr>
+<td><strong>云端书库</strong></td>
+<td>❌ 我们不运营、不托管您的书籍</td>
+</tr>
+<tr>
+<td><strong>网页导入</strong></td>
+<td>📡 仅局域网、您主动开启时使用</td>
+</tr>
+<tr>
+<td><strong>产品分析</strong></td>
+<td>📊 可选 Firebase Analytics，默认开启，可随时关闭</td>
+</tr>
+<tr>
+<td><strong>广告</strong></td>
+<td>❌ 无第三方广告</td>
+</tr>
+<tr>
+<td><strong>用户内容</strong></td>
+<td>📖 由您自行导入，您须保证合法性</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🎯 隐私设计原则</h2>
+<p>本应用遵循「默认本地、最小收集、透明可控」的原则：阅读数据留在您的设备，网络能力仅用于您可选的局域网导入，且不将书库上传至我们的服务器。</p>
+<hr />
+<p><strong>感谢您选择 AuraRead。</strong></p>
+<p>我们致力于以简洁、本地化的方式保护您的阅读隐私。</p>
+<hr />
+<p><em>本隐私政策中英文版本如有不一致，以中文版为准。</em></p>
+    </article>
+    <footer>© AuraRead · <a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></footer>
+  </div>
+</body>
+</html>
