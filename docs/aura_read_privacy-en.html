@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: #e8e8ed;
+  background: linear-gradient(160deg, #0a0a0f 0%, #12121a 50%, #0d1118 100%);
+  min-height: 100vh;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+header h1 { margin: 0 0 8px; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+header p { margin: 0; color: #8e8e93; font-size: 0.95rem; }
+nav { margin-bottom: 28px; font-size: 0.9rem; }
+nav a { color: #64b5f6; text-decoration: none; margin-right: 16px; }
+nav a:hover { text-decoration: underline; }
+article h2 { margin-top: 2rem; font-size: 1.25rem; color: #f5f5f7; }
+article h3 { margin-top: 1.5rem; font-size: 1.05rem; color: #d1d1d6; }
+article p, article li { color: #c7c7cc; }
+article a { color: #64b5f6; }
+article hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 2rem 0; }
+article code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+article table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+article th, article td { border: 1px solid rgba(255,255,255,0.1); padding: 8px 12px; text-align: left; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); color: #636366; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <h1>AuraRead</h1>
+      <p>Privacy Policy</p>
+    </header>
+    <nav>
+      <a href="privacy-cn.html">中文版</a>
+    </nav>
+    <article>
+<h1>AuraRead Privacy Policy</h1>
+<p><strong>Last Updated</strong>: May 16, 2026<br />
+<strong>Effective Date</strong>: May 16, 2026</p>
+<hr />
+<h2>📱 Introduction</h2>
+<p>AuraRead ("we", "our", or "us") is a <strong>local e-book reader</strong>. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect information when you use the AuraRead application (the "App", Bundle ID: <code>com.aura.reader</code>).</p>
+<p><strong>Important</strong>:</p>
+<ul>
+<li>We do <strong>not</strong> actively collect information that directly identifies you, such as your name, email address, or phone number.</li>
+<li>Books you import, reading progress, and statistics are <strong>stored on your device by default</strong>. We do not operate servers to host your library.</li>
+<li>To improve the App, and <strong>only when enabled (you can turn this off in Settings)</strong>, we use <strong>Google Firebase Analytics</strong> to collect de-identified usage statistics as described below. We do <strong>not</strong> upload book text, chapter content, titles, authors, or file names via Firebase.</li>
+</ul>
+<hr />
+<h2>🔍 Information We Collect</h2>
+<h3>1. Personal Information We Do NOT Collect</h3>
+<p>We do <strong>not</strong> ask you to provide:</p>
+<ul>
+<li>❌ Name</li>
+<li>❌ Email address</li>
+<li>❌ Phone number</li>
+<li>❌ Precise location</li>
+<li>❌ Contacts or photo library (except when you voluntarily import books via the system file picker)</li>
+</ul>
+<p><strong>Note</strong>: If you leave <strong>Analytics</strong> enabled in Settings, Firebase Analytics may automatically collect de-identified technical information (such as device identifiers, IP address, and usage data) as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can disable this at any time under <strong>Settings → Enable Analytics</strong>.</p>
+<h3>2. Data Stored Locally</h3>
+<p>The App stores the following data <strong>only on your device</strong> and does <strong>not</strong> upload it to our servers:</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Purpose</th>
+<th>Storage Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Book files</td>
+<td>Reading TXT, EPUB, MOBI, etc.</td>
+<td>App sandbox <code>Documents/Books</code></td>
+</tr>
+<tr>
+<td>Library metadata</td>
+<td>Title, cover, progress, chapters</td>
+<td>Local Core Data</td>
+</tr>
+<tr>
+<td>Reading sessions</td>
+<td>Reading time statistics, heatmap</td>
+<td>Local Core Data</td>
+</tr>
+<tr>
+<td>Reading settings</td>
+<td>Font, theme, page-turn animation, etc.</td>
+<td>Local Core Data / UserDefaults</td>
+</tr>
+<tr>
+<td>App settings</td>
+<td>Appearance, language, etc.</td>
+<td>Local UserDefaults</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong>: This data is created or imported by you. Except for <strong>Web Import</strong> over your local network (described below), we do not retrieve this data from your device.</p>
+<hr />
+<h2>🛠 Technologies and Permissions</h2>
+<h3>1. File Import (Files / Share / Open In)</h3>
+<p>You may import e-books via the system file picker, Share sheet, or "Open in AuraRead". Imported files are saved in the App sandbox <strong>for on-device reading only</strong>.</p>
+<h3>2. Web Import (Local Network)</h3>
+<p>Under <strong>Settings → Web Import</strong>, the App can start a <strong>local HTTP server</strong> on your iPhone or iPad (using the open-source GCDWebServer library) so you can upload books from a computer browser on the same Wi‑Fi.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Network scope</strong></td>
+<td>Your local network only; no connection to our cloud servers</td>
+</tr>
+<tr>
+<td><strong>Data flow</strong></td>
+<td>Uploaded files are written directly to your on-device library; we do not relay them</td>
+</tr>
+<tr>
+<td><strong>System permissions</strong></td>
+<td>Local Network permission (<code>NSLocalNetworkUsageDescription</code>); Bonjour service type <code>_http._tcp</code></td>
+</tr>
+<tr>
+<td><strong>Usage note</strong></td>
+<td>The server runs only while Web Import is enabled and the App stays in the foreground; it stops when you leave that screen</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data flow</strong>: Transfers occur only between your device and your computer on your LAN; we cannot access it.</p>
+<h3>3. Open-Source Components (On-Device Processing)</h3>
+<p>The App uses these third-party libraries to process content <strong>locally</strong>; they do not send your library to the developers' servers:</p>
+<ul>
+<li><strong>GCDWebServer</strong>: LAN web upload</li>
+<li><strong>ZIPFoundation</strong>: EPUB and other archive parsing</li>
+<li><strong>Kanna</strong>: HTML/XML parsing</li>
+</ul>
+<h3>4. Features Not Currently Offered</h3>
+<p>As of the effective date of this policy, the App does <strong>not</strong> provide or enable:</p>
+<ul>
+<li>❌ iCloud sync (planned for a future version, not yet available)</li>
+<li>❌ Account sign-in or cloud library</li>
+<li>❌ Marketing push notifications</li>
+<li>❌ Built-in bookstore or content distribution</li>
+</ul>
+<hr />
+<h2>📊 Third-Party Services</h2>
+<h3>Firebase Analytics (Google)</h3>
+<p>The App integrates <strong>Google Firebase Analytics</strong> to understand feature usage and improve stability and user experience.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Provider</strong></td>
+<td>Google LLC (Firebase)</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Product analytics, feature improvement, error statistics</td>
+</tr>
+<tr>
+<td><strong>Default</strong></td>
+<td><strong>Enabled</strong> on first launch; you can disable it in Settings</td>
+</tr>
+<tr>
+<td><strong>How to opt out</strong></td>
+<td>Open the App → <strong>Settings</strong> → turn off <strong>Enable Analytics</strong></td>
+</tr>
+<tr>
+<td><strong>Data we send</strong></td>
+<td>See “Analytics events” below</td>
+</tr>
+<tr>
+<td><strong>Data we do not send</strong></td>
+<td>Name, email, phone, contacts, photos, precise location, book text, chapter content, titles, authors, file names</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analytics events we may log</strong> (de-identified, aggregated):</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Example parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App lifecycle</td>
+<td>App open/close, session duration</td>
+</tr>
+<tr>
+<td>Reading</td>
+<td>Reader opened, book format (e.g., epub/txt); no titles or content</td>
+</tr>
+<tr>
+<td>Book import</td>
+<td>Import source (file/share/web), format, duplicate flag</td>
+</tr>
+<tr>
+<td>Web import</td>
+<td>Books imported per session count (no file names)</td>
+</tr>
+<tr>
+<td>Settings</td>
+<td>Theme mode, language, analytics toggle, etc.</td>
+</tr>
+<tr>
+<td>UI</td>
+<td>Screen names (e.g., bookshelf, statistics, settings, reader)</td>
+</tr>
+<tr>
+<td>Errors</td>
+<td>Error type; non-personal descriptions (no book content)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>User properties</strong> (optional, for segmentation): theme mode, UI language preference, etc.</p>
+<p><strong>Storage &amp; international transfers</strong>: Firebase may process data on servers outside your country (e.g., the United States), subject to Google's safeguards. See:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://firebase.google.com/terms">Firebase Terms of Service</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Firebase / Google Analytics data collection</a></li>
+</ul>
+<p>After you disable Analytics, we stop sending new events to Firebase. Retention and deletion of data already held by Google are governed by Google's policies.</p>
+<h3>Other Third-Party Services We Do NOT Use</h3>
+<p>The App does <strong>not</strong> include:</p>
+<ul>
+<li>❌ Third-party advertising SDKs</li>
+<li>❌ Standalone crash reporting SDKs (e.g., Crashlytics; errors may be logged via Firebase Analytics only)</li>
+<li>❌ Social media SDKs</li>
+<li>❌ Remote library or sync services operated by us</li>
+</ul>
+<h3>Apple System Services That May Apply</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Purpose</th>
+<th>Data Sharing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Files / document sharing</td>
+<td>Import or manage book files (if you allow it in system settings)</td>
+<td>At your initiative; data stays on device or your chosen iCloud Drive</td>
+</tr>
+<tr>
+<td>Apple iCloud device backup</td>
+<td>If you enable iCloud Backup, the App sandbox may be included in encrypted backup</td>
+<td>Handled by Apple under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></td>
+</tr>
+<tr>
+<td>App Store / In-App Purchase (if applicable)</td>
+<td>Purchases or subscriptions</td>
+<td>Apple processes payment; we do not receive card numbers</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>📖 Content You Import</h2>
+<p>The App does <strong>not</strong> provide copyrighted e-books. All books are <strong>imported by you</strong>. You must ensure you have the legal right to use imported content. We are not responsible for user-imported content and cannot access or review your on-device library.</p>
+<hr />
+<h2>🔒 Data Security</h2>
+<ol>
+<li><strong>Device security</strong>: Protect your device with a passcode, Face ID, or Touch ID.</li>
+<li><strong>Sandbox isolation</strong>: App data is stored in the iOS sandbox; other apps cannot read it directly.</li>
+<li><strong>Local Web Import</strong>: Listens on your LAN only when you enable it; use on trusted Wi‑Fi and turn it off when finished.</li>
+<li><strong>iCloud Backup</strong>: If enabled, backup data is encrypted by Apple.</li>
+</ol>
+<hr />
+<h2>👶 Children's Privacy</h2>
+<p>The App is a general-purpose reader and does not knowingly collect personal information from children under 13. The App does not show third-party ads and does not collect children's names or contact details. If you are a parent or guardian and believe your child has provided information to us, please contact us using the details below.</p>
+<hr />
+<h2>🌍 International Data Transfers</h2>
+<ul>
+<li><strong>Library and reading data</strong>: Stored on your device by default; we do not transfer it internationally.</li>
+<li><strong>Firebase Analytics</strong> (if enabled): data may be transferred to Google's servers outside your country, subject to Google's privacy policy and security measures.</li>
+<li><strong>Web Import</strong>: Transfers occur only on your local network, not through our servers.</li>
+<li><strong>Apple services</strong> (e.g., iCloud Backup, App Store): Governed by Apple's policies and may involve servers outside your country.</li>
+</ul>
+<hr />
+<h2>📝 Your Rights</h2>
+<p>Under applicable privacy laws (e.g., GDPR, CCPA, China's Personal Information Protection Law), you may have the following rights:</p>
+<h3>1. Right to Access</h3>
+<p>You can view your library, reading progress, and statistics in the App.</p>
+<h3>2. Right to Erasure</h3>
+<ul>
+<li>Delete individual books from the bookshelf.</li>
+<li>Delete all data by uninstalling the App or clearing its data in system Settings.</li>
+</ul>
+<h3>3. Right to Withdraw Consent / Opt Out of Analytics</h3>
+<p>You can disable Firebase Analytics at any time under <strong>Settings → Enable Analytics</strong>. You can also disable Local Network access for AuraRead under <strong>Settings → Privacy &amp; Security → Local Network</strong>. Web Import will not work, but local reading of imported books is unaffected.</p>
+<h3>4. Right to Data Portability</h3>
+<p>Imported book files are stored in the App sandbox; you may back them up via file sharing or other system features where available.</p>
+<hr />
+<h2>🔔 Changes to This Privacy Policy</h2>
+<p>We may update this policy from time to time. The updated version will be published here with a revised "Last Updated" date. For material changes, we may notify you via in-app notice or App Store release notes. Continued use of the App means you accept the updated policy; if you disagree, please stop using the App and uninstall it.</p>
+<hr />
+<h2>📬 Contact Us</h2>
+<table>
+<thead>
+<tr>
+<th>Contact Method</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Email</strong></td>
+<td><a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Time</strong>: We will respond within 30 days.</p>
+<hr />
+<h2>⚖️ Governing Law and Jurisdiction</h2>
+<ul>
+<li><strong>Primary</strong>: Laws of the People's Republic of China, including the Cybersecurity Law and Personal Information Protection Law</li>
+<li><strong>International users</strong>: Also subject to applicable local laws (e.g., GDPR in the EU)</li>
+<li><strong>Dispute resolution</strong>: Friendly negotiation first; if unresolved, submission to a court with competent jurisdiction</li>
+</ul>
+<hr />
+<h2>📋 Key Terms Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Our Commitment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Personal identity</strong></td>
+<td>❌ We do not actively collect name, email, or phone</td>
+</tr>
+<tr>
+<td><strong>Library &amp; reading data</strong></td>
+<td>💾 Stored on your device by default</td>
+</tr>
+<tr>
+<td><strong>Cloud library</strong></td>
+<td>❌ We do not host your books</td>
+</tr>
+<tr>
+<td><strong>Web Import</strong></td>
+<td>📡 Local network only, when you enable it</td>
+</tr>
+<tr>
+<td><strong>Product analytics</strong></td>
+<td>📊 Optional Firebase Analytics; on by default; can be disabled</td>
+</tr>
+<tr>
+<td><strong>Advertising</strong></td>
+<td>❌ No third-party ads</td>
+</tr>
+<tr>
+<td><strong>User content</strong></td>
+<td>📖 Imported by you; you must ensure it is lawful</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🎯 Privacy by Design</h2>
+<p>The App follows "local by default, minimal collection, transparent control": reading data stays on your device; network features are limited to optional LAN import and do not upload your library to our servers.</p>
+<hr />
+<p><strong>Thank you for choosing AuraRead.</strong></p>
+<p>We are committed to protecting your reading privacy in a simple, local-first way.</p>
+<hr />
+<p><em>In case of inconsistency between the Chinese and English versions, the Chinese version shall prevail.</em></p>
+    </article>
+    <footer>© AuraRead · <a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></footer>
+  </div>
+</body>
+</html>
