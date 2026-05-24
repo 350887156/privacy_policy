@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy</title>
+  <style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+  color: #e8e8ed;
+  background: linear-gradient(160deg, #0a0a0f 0%, #12121a 50%, #0d1118 100%);
+  min-height: 100vh;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+header h1 { margin: 0 0 8px; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+header p { margin: 0; color: #8e8e93; font-size: 0.95rem; }
+nav { margin-bottom: 28px; font-size: 0.9rem; }
+nav a { color: #64b5f6; text-decoration: none; margin-right: 16px; }
+nav a:hover { text-decoration: underline; }
+article h2 { margin-top: 2rem; font-size: 1.25rem; color: #f5f5f7; }
+article h3 { margin-top: 1.5rem; font-size: 1.05rem; color: #d1d1d6; }
+article p, article li { color: #c7c7cc; }
+article a { color: #64b5f6; }
+article hr { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 2rem 0; }
+article code { background: rgba(255,255,255,0.06); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+article table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+article th, article td { border: 1px solid rgba(255,255,255,0.1); padding: 8px 12px; text-align: left; }
+footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); color: #636366; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <h1>拾词记</h1>
+      <p>Privacy Policy</p>
+    </header>
+    <nav>
+      <a href="privacy-cn.html">中文版</a>
+    </nav>
+    <article>
+<h1>拾词记 (Shiciji) Privacy Policy</h1>
+<p><strong>Last Updated</strong>: May 22, 2026<br />
+<strong>Effective Date</strong>: May 22, 2026</p>
+<hr />
+<h2>📱 Introduction</h2>
+<p>拾词记 / Shiciji ("we", "our", or "us") is a <strong>local-first English vocabulary learning app</strong> for <strong>iPhone and Apple Watch</strong>. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect information when you use the 拾词记 application (the "App").</p>
+<p><strong>App identifiers</strong>:</p>
+<ul>
+<li>iPhone app Bundle ID: <code>com.lajiaoyang.vocabulary</code></li>
+<li>Apple Watch companion Bundle ID: <code>com.lajiaoyang.vocabulary.watchkitapp</code></li>
+<li>Widget / Live Activity extension: <code>com.lajiaoyang.vocabulary.widgets</code></li>
+</ul>
+<p><strong>Important</strong>:</p>
+<ul>
+<li>We do <strong>not</strong> require account registration and do <strong>not</strong> actively collect information that directly identifies you, such as your name, email address, or phone number.</li>
+<li>Your study progress, review schedules, deck selection, and mistake records are <strong>stored on your devices by default</strong> (and may sync between your paired iPhone and Apple Watch via Apple frameworks). We do <strong>not</strong> operate servers to host your learning history.</li>
+<li>To improve the App, <strong>Release builds</strong> distributed via the App Store may use <strong>Google Firebase Analytics</strong> to collect de-identified usage statistics as described below. We do <strong>not</strong> upload specific word spellings, full definitions, example sentences, or your personal study logs through Firebase.</li>
+<li><strong>Debug builds</strong> (e.g., when running from Xcode) do <strong>not</strong> enable Firebase Analytics.</li>
+</ul>
+<hr />
+<h2>🔍 Information We Collect</h2>
+<h3>1. Personal Information We Do NOT Collect</h3>
+<p>We do <strong>not</strong> ask you to provide:</p>
+<ul>
+<li>❌ Name</li>
+<li>❌ Email address</li>
+<li>❌ Phone number</li>
+<li>❌ Precise location</li>
+<li>❌ Contacts, photo library, or microphone recordings (the App does not use voice input for vocabulary study)</li>
+</ul>
+<p><strong>Note</strong>: When Firebase Analytics is enabled in Release builds, Firebase may automatically collect de-identified technical information (such as device identifiers, IP address, and usage data) as described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Google acts as an independent processor for that data.</p>
+<h3>2. Data Stored Locally</h3>
+<p>The App stores the following data <strong>primarily on your device</strong> and does <strong>not</strong> upload it to our own servers:</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Purpose</th>
+<th>Storage Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deck &amp; study progress</td>
+<td>New words, review queue, mastery (FSRS)</td>
+<td>Local SwiftData</td>
+</tr>
+<tr>
+<td>Daily quotas &amp; statistics</td>
+<td>Today's study count, due reviews, pass rate, etc.</td>
+<td>Local SwiftData / UserDefaults / App Group</td>
+</tr>
+<tr>
+<td>Mistakes notebook</td>
+<td>Confusion-pair review</td>
+<td>Local SwiftData</td>
+</tr>
+<tr>
+<td>Exam plan &amp; settings</td>
+<td>Exam date, sprint mode, daily new-word cap, etc.</td>
+<td>UserDefaults / App Group</td>
+</tr>
+<tr>
+<td>Bundled dictionary data</td>
+<td>Entries, definitions, examples, exam tags</td>
+<td>In-app resources (offline CSV/SQLite, etc.)</td>
+</tr>
+<tr>
+<td>Achievements &amp; onboarding</td>
+<td>Badge progress, coach flags, etc.</td>
+<td>UserDefaults</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong>: Study data is generated by your use of the App; dictionary content is bundled from open-source datasets, not files you upload.</p>
+<hr />
+<h2>🛠 Technologies and Permissions</h2>
+<h3>1. Apple Watch and iPhone Sync</h3>
+<p>The App includes an Apple Watch companion that uses Apple's <strong>WatchConnectivity</strong> and <strong>App Group</strong> (<code>group.com.lajiaoyang.vocabulary</code>) to sync review queues, quiz results, and related study state between <strong>your paired iPhone and Apple Watch</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data flow</strong></td>
+<td>Between your personal devices only; not relayed through servers we operate</td>
+</tr>
+<tr>
+<td><strong>Requirements</strong></td>
+<td>Install the watch app via the system Watch app; pairing is managed by Apple</td>
+</tr>
+<tr>
+<td><strong>Your control</strong></td>
+<td>You may stop syncing, remove the watch app, or unpair devices at any time</td>
+</tr>
+</tbody>
+</table>
+<h3>2. Pronunciation (System TTS)</h3>
+<p>The App uses Apple's <strong>AVSpeechSynthesizer</strong> for on-device text-to-speech. Quality depends on voice packs installed on your device. We do not send pronunciation requests to our own servers.</p>
+<h3>3. Lock Screen Live Activity &amp; Widgets</h3>
+<p>Where supported, the App may show today's study progress (e.g., completed count, due reviews) via <strong>ActivityKit</strong> and <strong>WidgetKit</strong>. Data comes from the on-device App Group and is <strong>not sent to our servers</strong>.</p>
+<h3>4. Open-Source Dictionary Data</h3>
+<p>Word lists are derived from open-source projects such as ECDICT and CC-CEDICT (full attributions under <strong>Settings → Dictionary &amp; Licenses</strong>). Content is loaded locally; <strong>no network is required</strong> for study after the bundled library is available on device (first launch may show a local import progress).</p>
+<h3>5. Features Not Currently Offered</h3>
+<p>As of the effective date of this policy, the App does <strong>not</strong> provide or enable:</p>
+<ul>
+<li>❌ Account sign-in or cloud study profiles</li>
+<li>❌ Remote study-history sync operated by us</li>
+<li>❌ Third-party advertising SDKs</li>
+<li>❌ Standalone crash reporting SDKs (e.g., Firebase Crashlytics)</li>
+<li>❌ Marketing push notifications for advertising</li>
+</ul>
+<hr />
+<h2>📊 Third-Party Services</h2>
+<h3>Firebase Analytics (Google)</h3>
+<p>The iPhone app integrates <strong>Google Firebase Analytics</strong> to understand feature usage and improve stability and experience.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Provider</strong></td>
+<td>Google LLC (Firebase)</td>
+</tr>
+<tr>
+<td><strong>Purpose</strong></td>
+<td>Product analytics, feature improvement, aggregated statistics</td>
+</tr>
+<tr>
+<td><strong>When enabled</strong></td>
+<td><strong>App Store / Release</strong> builds only; Xcode <strong>Debug</strong> builds do not initialize or send analytics</td>
+</tr>
+<tr>
+<td><strong>In-app toggle</strong></td>
+<td>v1.0 does not include a separate "Disable Analytics" setting; contact us if you wish to opt out of Release analytics</td>
+</tr>
+<tr>
+<td><strong>Data we send</strong></td>
+<td>See "Analytics events" below</td>
+</tr>
+<tr>
+<td><strong>Data we do not send</strong></td>
+<td>Name, email, phone, contacts, photos, precise location, specific lemmas, full definitions, example text, personal study detail lists</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Analytics events we may log</strong> (de-identified, aggregated; actual events may vary by version):</p>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Example parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App lifecycle</td>
+<td>App open, sessions (Firebase default events)</td>
+</tr>
+<tr>
+<td>Study behavior</td>
+<td>Learn/review session start or complete; counts or types only, not specific words</td>
+</tr>
+<tr>
+<td>Decks &amp; settings</td>
+<td>Exam deck category, daily cap tier, sprint mode on/off, etc.</td>
+</tr>
+<tr>
+<td>Apple Watch</td>
+<td>Watch quiz completed, sync success (no word content from the queue)</td>
+</tr>
+<tr>
+<td>UI</td>
+<td>Screen names (e.g., Today, Books, Stats, Settings)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Storage &amp; international transfers</strong>: Firebase may process data on servers outside your country (e.g., the United States), subject to Google's safeguards. See:</p>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://firebase.google.com/terms">Firebase Terms of Service</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Firebase / Google Analytics data collection</a></li>
+</ul>
+<h3>Other Third-Party Services We Do NOT Use</h3>
+<p>The App does <strong>not</strong> include:</p>
+<ul>
+<li>❌ Third-party advertising SDKs</li>
+<li>❌ Social media SDKs</li>
+<li>❌ Cloud study databases operated by us</li>
+</ul>
+<h3>Apple System Services That May Apply</h3>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Purpose</th>
+<th>Data Sharing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WatchConnectivity / App Group</td>
+<td>Sync queues and progress between iPhone and Apple Watch</td>
+<td>Transferred between your devices via Apple; we do not relay it</td>
+</tr>
+<tr>
+<td>Apple iCloud device backup</td>
+<td>If you enable iCloud Backup, app data may be included in encrypted backup</td>
+<td>Handled by Apple under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></td>
+</tr>
+<tr>
+<td>App Store / In-App Purchase (if offered later)</td>
+<td>Purchases or subscriptions</td>
+<td>Apple processes payment; we do not receive card numbers</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>📖 Dictionary Content</h2>
+<p>Exam word lists and examples come from <strong>open-source dictionary datasets</strong> (filtered and converted for in-app use). We do not guarantee academic completeness of third-party source data. The App is intended for personal study; please comply with applicable open-source licenses (see in-app notices). We <strong>cannot</strong> access your full on-device study archive and do not review how you use dictionary entries.</p>
+<hr />
+<h2>🔒 Data Security</h2>
+<ol>
+<li><strong>Device security</strong>: Protect your iPhone and Apple Watch with a passcode, Face ID, or Touch ID.</li>
+<li><strong>Sandbox isolation</strong>: App data is stored in the iOS / watchOS sandbox; other apps cannot read it directly.</li>
+<li><strong>Paired devices</strong>: Watch sync occurs only between devices you have paired; keep your Apple devices secure.</li>
+<li><strong>iCloud Backup</strong>: If enabled, backup data is encrypted by Apple.</li>
+</ol>
+<hr />
+<h2>👶 Children's Privacy</h2>
+<p>The App is a general vocabulary learning tool and does not knowingly collect personal information from children under 13. The App does not show third-party ads and does not collect children's names or contact details. If you are a parent or guardian and believe your child has provided information to us, please contact us using the details below.</p>
+<hr />
+<h2>🌍 International Data Transfers</h2>
+<ul>
+<li><strong>Study and dictionary usage data</strong>: Stored on your devices (and paired Watch) by default; we do not transfer it to our own servers internationally.</li>
+<li><strong>Firebase Analytics</strong> (Release builds): data may be transferred to Google's servers outside your country, subject to Google's privacy policy and security measures.</li>
+<li><strong>Apple services</strong> (e.g., iCloud Backup, App Store, Watch pairing): Governed by Apple's policies and may involve servers outside your country.</li>
+</ul>
+<hr />
+<h2>📝 Your Rights</h2>
+<p>Under applicable privacy laws (e.g., GDPR, CCPA, China's Personal Information Protection Law), you may have the following rights:</p>
+<h3>1. Right to Access</h3>
+<p>You can view study progress, statistics, decks, and settings in the App.</p>
+<h3>2. Right to Erasure</h3>
+<ul>
+<li>Reset progress: switch decks or use in-app reset options (if available), or uninstall the App.</li>
+<li>Delete all data: uninstall the iPhone app and the Watch companion, or clear app data in system Settings.</li>
+</ul>
+<h3>3. Right to Restrict Processing / Opt Out of Analytics</h3>
+<p>Release builds currently enable Firebase Analytics; Debug builds do not. To request restriction, contact us; a future version may add an in-app disable option.</p>
+<h3>4. Right to Data Portability</h3>
+<p>v1.0 does not offer one-tap export of your study archive; rely on system backup or future export features if added.</p>
+<hr />
+<h2>🔔 Changes to This Privacy Policy</h2>
+<p>We may update this policy from time to time. The updated version will be published here with a revised "Last Updated" date. For material changes, we may notify you via in-app notice or App Store release notes. Continued use of the App means you accept the updated policy; if you disagree, please stop using the App and uninstall it.</p>
+<hr />
+<h2>📬 Contact Us</h2>
+<table>
+<thead>
+<tr>
+<th>Contact Method</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Email</strong></td>
+<td><a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Time</strong>: We will respond within 30 days.</p>
+<hr />
+<h2>⚖️ Governing Law and Jurisdiction</h2>
+<ul>
+<li><strong>Primary</strong>: Laws of the People's Republic of China, including the Cybersecurity Law and Personal Information Protection Law</li>
+<li><strong>International users</strong>: Also subject to applicable local laws (e.g., GDPR in the EU)</li>
+<li><strong>Dispute resolution</strong>: Friendly negotiation first; if unresolved, submission to a court with competent jurisdiction</li>
+</ul>
+<hr />
+<h2>📋 Key Terms Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Our Commitment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Personal identity</strong></td>
+<td>❌ We do not actively collect name, email, or phone</td>
+</tr>
+<tr>
+<td><strong>Study data</strong></td>
+<td>💾 Stored on your devices (and paired Watch) by default</td>
+</tr>
+<tr>
+<td><strong>Cloud study profile</strong></td>
+<td>❌ We do not host your learning history on our servers</td>
+</tr>
+<tr>
+<td><strong>Watch sync</strong></td>
+<td>⌚ Between your iPhone and Watch via Apple frameworks</td>
+</tr>
+<tr>
+<td><strong>Product analytics</strong></td>
+<td>📊 Firebase Analytics in Release; none in Debug</td>
+</tr>
+<tr>
+<td><strong>Advertising</strong></td>
+<td>❌ No third-party ads</td>
+</tr>
+<tr>
+<td><strong>Dictionary</strong></td>
+<td>📖 Bundled open-source data, offline-capable; see in-app licenses</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>🎯 Privacy by Design</h2>
+<p>The App follows "local by default, minimal collection, transparent control": study records stay on your devices; network use is mainly for optional analytics (Release) and Apple-provided device-to-device sync—we do not upload your detailed study logs to our own business servers.</p>
+<hr />
+<p><strong>Thank you for choosing 拾词记.</strong></p>
+<p>We are committed to protecting your learning privacy in a simple, local-first way.</p>
+<hr />
+<p><em>In case of inconsistency between the Chinese and English versions, the Chinese version shall prevail.</em></p>
+    </article>
+    <footer>© 拾词记 · <a href="mailto:sclea1988@gmail.com">sclea1988@gmail.com</a></footer>
+  </div>
+</body>
+</html>
