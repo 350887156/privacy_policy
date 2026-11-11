@@ -45,16 +45,17 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
     </nav>
     <article>
 <h1>AuraRead 隐私政策</h1>
-<p><strong>最后更新日期</strong>：2026 年 5 月 16 日<br />
-<strong>生效日期</strong>：2026 年 5 月 16 日</p>
+<p><strong>最后更新日期</strong>：2026 年 11 月 11 日
+<strong>生效日期</strong>：2026 年 11 月 11 日</p>
 <hr />
 <h2>📱 引言</h2>
 <p>AuraRead（「我们」）是一款<strong>本地电子书阅读工具</strong>。我们致力于保护您的隐私。本隐私政策说明您使用 AuraRead 应用程序（以下简称「本应用」，Bundle ID：<code>com.aura.reader</code>）时，我们如何收集、使用、存储和保护相关信息。</p>
 <p><strong>重要说明</strong>：</p>
 <ul>
-<li>本应用<strong>不会</strong>主动收集您的姓名、电子邮件、电话号码等可直接识别个人身份的信息。</li>
-<li>您导入的书籍文件、阅读进度与统计等数据<strong>默认仅存储在您的设备本地</strong>，我们不会运营用于存储您书库的服务器。</li>
-<li>为改进产品体验，在<strong>您同意或可在设置中关闭</strong>的前提下，我们可能通过 <strong>Google Firebase Analytics</strong> 收集去标识化的使用统计数据（详见下文）。<strong>我们不会</strong>通过 Firebase 上传书籍正文、章节内容或文件名等书库内容。</li>
+<li>本应用<strong>不会</strong>主动收集您的姓名、电子邮件、电话号码等可直接识别个人身份的信息，也<strong>不需要注册或登录</strong>。</li>
+<li>您导入的书籍文件、阅读进度、笔记与统计等数据<strong>默认仅存储在您的设备本地</strong>，我们<strong>不运营</strong>用于存储您书库的服务器。</li>
+<li>只有在<strong>您主动开启</strong>「iCloud 同步」或使用 Apple Watch 阅读时，相关数据才会通过 <strong>Apple iCloud</strong> 或 <strong>Apple Watch 连接</strong>在您自己的设备之间传输；数据存放在您的 Apple 账户空间内，<strong>我们无权访问</strong>。</li>
+<li>为改进产品体验，在您可在设置中关闭的前提下，我们通过 <strong>友盟+ 移动统计 SDK</strong> 收集去标识化的使用统计数据（详见下文）。<strong>我们不会</strong>通过该服务上传书籍正文、章节内容、书名或文件名等书库内容。</li>
 </ul>
 <hr />
 <h2>🔍 我们收集的信息</h2>
@@ -66,53 +67,114 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <li>❌ 电话号码</li>
 <li>❌ 精确地理位置</li>
 <li>❌ 通讯录、照片图库（除您主动通过系统文件选择器导入书籍外）</li>
+<li>❌ 面部图像、深度图、面部网格、虹膜或 Face ID 数据（闭眼翻页仅读取眼部闭合系数，详见 3.5 节）</li>
 </ul>
-<p><strong>说明</strong>：若您在设置中<strong>开启数据分析</strong>，Firebase Analytics 可能按 <a href="https://policies.google.com/privacy">Google 隐私政策</a> 自动收集设备标识符、IP 地址、应用使用情况等去标识化技术信息。您可随时在 <strong>设置 → 启用分析</strong> 中关闭。</p>
-<h3>2. 本地存储的数据</h3>
-<p>本应用仅在您的设备本地存储以下数据，<strong>不会上传至我们的服务器</strong>：</p>
+<p><strong>说明</strong>：若您开启数据分析，友盟统计 SDK 可能按友盟隐私政策收集设备标识符（如 IDFV）、IP 地址、网络类型、应用版本与功能使用事件等去标识化技术信息。本应用<strong>未请求</strong> App Tracking Transparency 授权，<strong>不将 IDFA 用于跨 App 追踪</strong>。您可随时在 <strong>设置 → 启用分析</strong> 中关闭。</p>
+<h3>2. 仅存储在你设备本地的数据</h3>
+<p>本应用仅在您的设备本地存储以下数据：</p>
 <table>
 <thead>
 <tr>
 <th>数据类型</th>
 <th>用途</th>
 <th>存储位置</th>
+<th>保留期限</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>书籍文件</td>
-<td>阅读 TXT、EPUB、MOBI 等格式</td>
+<td>阅读 TXT、EPUB、MOBI、AZW/AZW3、PDF、CBZ 等格式</td>
 <td>应用沙盒 <code>Documents/Books</code></td>
+<td>直到您删除该书</td>
 </tr>
 <tr>
 <td>书架与元数据</td>
-<td>书名、封面、进度、章节等</td>
+<td>书名、作者、封面、章节、分类、阅读位置</td>
 <td>本地 Core Data</td>
+<td>直到您删除该书或卸载应用</td>
+</tr>
+<tr>
+<td>笔记、标注与书签</td>
+<td>划线、批注、书签</td>
+<td>本地 Core Data</td>
+<td>直到您删除该条记录或卸载应用</td>
 </tr>
 <tr>
 <td>阅读会话记录</td>
-<td>阅读时长统计、热力图等</td>
+<td>阅读时长、阅读天数、热力图、时段分布等统计</td>
 <td>本地 Core Data</td>
+<td>直到您清除统计或卸载应用</td>
 </tr>
 <tr>
 <td>阅读设置</td>
-<td>字体、主题、翻页动画等偏好</td>
+<td>字体、字号、主题、翻页动画、排版等偏好</td>
 <td>本地 Core Data / UserDefaults</td>
+<td>直到您修改或卸载应用</td>
 </tr>
 <tr>
 <td>应用设置</td>
-<td>外观、语言等</td>
+<td>外观、语言、分析开关等</td>
 <td>本地 UserDefaults</td>
+<td>直到您修改或卸载应用</td>
+</tr>
+<tr>
+<td>缓存数据</td>
+<td>分页结果、章节文本、封面缩略图、EPUB 内嵌图片、小组件快照</td>
+<td>应用沙盒 <code>Caches</code> / App Group</td>
+<td>系统或应用可随时清理</td>
 </tr>
 </tbody>
 </table>
-<p><strong>说明</strong>：上述数据由您使用本应用产生或导入；除下文「网页导入」所述的<strong>同一局域网内</strong>传输外，我们不会从您的设备取走这些数据。</p>
+<p><strong>说明</strong>：上述数据由您使用本应用产生或导入；除下文「网页导入」「iCloud 同步」「Apple Watch 同步」所述情形外，我们不会从您的设备取走这些数据。</p>
+<h3>3. 你主动开启后跨设备同步的数据（iCloud）</h3>
+<p>iCloud 同步<strong>默认关闭</strong>，仅在您于 <strong>设置 → iCloud 同步</strong> 中打开总开关后才生效。您可分别控制：</p>
+<table>
+<thead>
+<tr>
+<th>同步项</th>
+<th>内容</th>
+<th>默认状态（总开关开启后）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>阅读进度同步</td>
+<td>阅读位置、书签、笔记与标注</td>
+<td>开启</td>
+</tr>
+<tr>
+<td>书籍文件同步</td>
+<td>书籍文件与封面</td>
+<td>关闭</td>
+</tr>
+<tr>
+<td>冲突策略</td>
+<td>多设备冲突时的取舍方式（如以云端为准 / 以本机为准）</td>
+<td>由您选择</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>存储位置</strong>：阅读进度、书签、笔记与标注通过 <strong>iCloud 键值存储</strong>（<code>NSUbiquitousKeyValueStore</code>）同步；书籍文件通过 <strong>iCloud Drive 容器</strong>（<code>iCloud.com.aura.reader</code>）同步，可在「文件」App 的 iCloud 云盘中查看。</li>
+<li><strong>数据控制</strong>：上述数据存放在<strong>您自己的 iCloud 账户</strong>中，由 Apple 按其隐私政策存储与加密；<strong>我们无权访问、读取或恢复</strong>。</li>
+<li><strong>关闭与删除</strong>：关闭同步开关后，应用停止新增同步，但<strong>不会自动删除已同步到 iCloud 的数据</strong>；如需删除，请在系统 iCloud 管理或「文件」App 中删除对应数据。</li>
+<li><strong>无自建服务器</strong>：我们不会把同步数据抄送到自己的服务器，也不提供云端书库服务。</li>
+</ul>
+<h3>4. 同步到 Apple Watch 的数据</h3>
+<p>当您安装 AuraRead 的 Apple Watch App 并使用手表阅读时，本应用会通过 <strong>WatchConnectivity</strong> 与 App Group 将以下数据传输到<strong>与您 iPhone 配对的 Apple Watch</strong>：</p>
+<ul>
+<li>书库快照（书名、作者、封面、格式等元数据）</li>
+<li>书籍正文分块</li>
+<li>阅读进度与阅读设置</li>
+</ul>
+<p>这些数据仅存储在您的 iPhone 与手表本地，传输由 Apple 系统框架完成；<strong>我们无权访问</strong>。取消手表同步或删除手表 App 后，手表端数据随之删除。</p>
 <hr />
 <h2>🛠 我们使用的技术与权限</h2>
-<h3>1. 文件导入（文件 App / 共享 / 打开方式）</h3>
+<h3>3.1 文件导入（文件 App / 共享 / 打开方式）</h3>
 <p>您可通过系统文件选择器、其他 App 的「共享」或「用 AuraRead 打开」将电子书导入本应用。导入的文件将复制或保存到本应用沙盒内，<strong>仅用于在本机阅读</strong>。</p>
-<h3>2. 网页导入（本地网络）</h3>
-<p>在<strong>设置 → 网页导入</strong>中，本应用可在您的 iPhone / iPad 上启动<strong>本地 HTTP 服务</strong>（基于开源库 GCDWebServer），以便在同一 Wi‑Fi 下的电脑浏览器中上传书籍。</p>
+<h3>3.2 网页导入（本地网络 / WebDAV / SMB）</h3>
+<p>在 <strong>设置 → 网页导入</strong> 中，本应用可在您的 iPhone / iPad 上启动<strong>本地 HTTP 服务</strong>（基于开源库 GCDWebServer），以便在同一 Wi‑Fi 下的电脑浏览器中上传书籍；本应用也支持通过 WebDAV 或 SMB 从局域网服务器导入书籍。</p>
 <table>
 <thead>
 <tr>
@@ -134,31 +196,22 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <td>「本地网络」权限（<code>NSLocalNetworkUsageDescription</code>）；Bonjour 服务类型 <code>_http._tcp</code></td>
 </tr>
 <tr>
+<td><strong>账号信息</strong></td>
+<td>WebDAV / SMB 的服务器地址与用户名保存在本机偏好设置，密码保存在系统钥匙串（Keychain），不上传</td>
+</tr>
+<tr>
 <td><strong>使用注意</strong></td>
 <td>服务仅在您开启网页导入且应用保持前台时运行；离开相关页面后服务停止</td>
 </tr>
 </tbody>
 </table>
-<p><strong>数据流向</strong>：仅在您的局域网内、在您的设备与您的电脑之间传输；我们无从访问。</p>
-<h3>3. 开源组件（设备端处理）</h3>
-<p>本应用使用以下第三方库，均在<strong>设备本地</strong>解析或提供网页导入服务，不将您的书库内容发送至开发者服务器：</p>
-<ul>
-<li><strong>GCDWebServer</strong>：局域网网页上传</li>
-<li><strong>ZIPFoundation</strong>：EPUB 等压缩包解析</li>
-<li><strong>Kanna</strong>：HTML/XML 解析</li>
-</ul>
-<h3>4. 我们当前未使用的功能</h3>
-<p>截至本政策生效日，本应用<strong>未提供</strong>且<strong>未启用</strong>：</p>
-<ul>
-<li>❌ iCloud 同步（规划中功能，尚未上线）</li>
-<li>❌ 账号登录与云端书库</li>
-<li>❌ 推送通知营销</li>
-<li>❌ 内置书城或内容分发</li>
-</ul>
-<hr />
-<h2>📊 第三方服务</h2>
-<h3>Firebase Analytics（Google）</h3>
-<p>本应用集成 <strong>Google Firebase Analytics</strong>，用于了解功能使用情况、改进稳定性与体验。</p>
+<p><strong>数据流向</strong>：仅在您的局域网内、在您的设备与您的电脑或服务器之间传输；我们无从访问。</p>
+<h3>3.3 iCloud 同步（你主动开启）</h3>
+<p>见上文「3. 你主动开启后跨设备同步的数据（iCloud）」。同步由 Apple iCloud 提供，我们<strong>不运营</strong>任何同步服务器，也无法读取您的 iCloud 数据。</p>
+<h3>3.4 Apple Watch 同步（你主动开启）</h3>
+<p>见上文「4. 同步到 Apple Watch 的数据」。传输由 Apple WatchConnectivity 完成，我们无法读取手表或 iPhone 上的数据。</p>
+<h3>3.5 面容数据（TrueDepth / ARKit）</h3>
+<p>AuraRead 的「闭眼翻页」功能使用 Apple ARKit 的面部追踪（<code>ARFaceTrackingConfiguration</code>）读取原深感摄像头（TrueDepth）提供的面部表情系数，<strong>仅用于判断您是否闭眼以触发翻页</strong>。</p>
 <table>
 <thead>
 <tr>
@@ -168,12 +221,106 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </thead>
 <tbody>
 <tr>
+<td><strong>收集的信息</strong></td>
+<td>仅实时读取左右眼闭合程度（blendShapes 中的 <code>eyeBlinkLeft</code> / <code>eyeBlinkRight</code> 数值）</td>
+</tr>
+<tr>
+<td><strong>不收集的信息</strong></td>
+<td>不采集面部图像、深度图、面部网格、虹膜或 Face ID 数据；不生成面部模板、面部标识或任何生物特征标识；不进行身份识别</td>
+</tr>
+<tr>
+<td><strong>使用目的</strong></td>
+<td>仅在您主动开启「闭眼翻页」并停留在阅读页面时，判断闭眼动作并翻至下一页</td>
+</tr>
+<tr>
+<td><strong>处理方式</strong></td>
+<td>全部在设备端由 ARKit 实时处理；逐帧数值仅在内存中用于阈值判断，判断完成后立即丢弃</td>
+</tr>
+<tr>
+<td><strong>存储位置</strong></td>
+<td>不存储。不写入磁盘、不上传服务器、不进入 iCloud、不进入日志或任何统计 SDK</td>
+</tr>
+<tr>
+<td><strong>保留期限</strong></td>
+<td>无。因不留存任何面部数据，故不存在保留期限</td>
+</tr>
+<tr>
+<td><strong>共享</strong></td>
+<td>不与任何第三方共享；不用于广告、分析或用户画像</td>
+</tr>
+<tr>
+<td><strong>关闭与删除</strong></td>
+<td>关闭「闭眼翻页」、离开阅读页或应用进入后台时，AR 会话立即停止；由于不存储任何数据，无需额外删除操作</td>
+</tr>
+<tr>
+<td><strong>权限</strong></td>
+<td>首次开启时请求相机权限；若拒绝，开关自动回退关闭，可随时在系统设置中修改</td>
+</tr>
+<tr>
+<td><strong>适用设备</strong></td>
+<td>需配备原深感摄像头的 iPhone / iPad；不支持的设备会提示并保持开关关闭</td>
+</tr>
+</tbody>
+</table>
+<h3>3.6 App 锁（Face ID / Touch ID）</h3>
+<p>您可选择开启 App 锁，使用系统 <strong>Face ID / Touch ID</strong> 解锁本应用。生物识别由 iOS 的 <code>LocalAuthentication</code> 与安全隔区（Secure Enclave）完成，本应用<strong>只接收验证成功或失败的结果</strong>，无法读取您的面部或指纹数据，也不会将其上传或存储。您可随时在设置中关闭 App 锁。</p>
+<h3>3.7 实时活动、小组件与听书</h3>
+<ul>
+<li><strong>实时活动 / 灵动岛</strong>：阅读时可在锁屏与灵动岛显示当前书名与阅读进度。数据仅保存在本机，关闭阅读或结束活动后停止展示。</li>
+<li><strong>小组件</strong>：桌面与锁屏小组件通过 App Group 读取本机的阅读进度快照，不上传服务器。</li>
+<li><strong>听书（TTS）</strong>：使用系统 <code>AVSpeechSynthesizer</code> 在设备端合成语音；部分系统音色需由 iOS 自行下载。书籍文本<strong>不会</strong>上传至我们的服务器。</li>
+</ul>
+<h3>3.8 阅读提醒通知</h3>
+<p>您可开启阅读提醒。提醒由<strong>本地通知</strong>实现（<code>UNUserNotificationCenter</code>），不经过任何推送服务器；通知权限可随时在系统设置中关闭。</p>
+<h3>3.9 开源组件（设备端处理）</h3>
+<p>本应用使用以下第三方库，均在<strong>设备本地</strong>解析或提供服务，不将您的书库内容发送至开发者服务器：</p>
+<ul>
+<li><strong>GCDWebServer</strong>：局域网网页上传</li>
+<li><strong>ZIPFoundation</strong>：EPUB 等压缩包解析</li>
+<li><strong>Kanna</strong>：HTML/XML 解析</li>
+</ul>
+<h3>3.10 我们当前未使用的功能</h3>
+<p>截至本政策生效日，本应用<strong>未提供</strong>且<strong>未启用</strong>：</p>
+<ul>
+<li>❌ 账号登录与由我们运营的云端书库</li>
+<li>❌ 推送通知营销</li>
+<li>❌ 内置书城或内容分发</li>
+<li>❌ 第三方广告与跨 App 追踪</li>
+</ul>
+<hr />
+<h2>📊 第三方服务</h2>
+<h3>友盟统计 SDK（Umeng+）</h3>
+<p>本应用集成 <strong>友盟+ 移动统计 SDK</strong>（MobClick / UMCommon），用于了解产品使用情况、辅助改进功能体验。关闭「启用分析」后，不再向友盟上报新的使用事件。</p>
+<blockquote>
+<p><strong>友盟 SDK 合规披露</strong>（依据友盟+ 官方要求公示）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>使用 SDK 名称</strong></td>
+<td>友盟 SDK</td>
+</tr>
+<tr>
+<td><strong>服务类型</strong></td>
+<td>统计分析</td>
+</tr>
+<tr>
 <td><strong>服务提供方</strong></td>
-<td>Google LLC（Firebase）</td>
+<td>友盟同欣（北京）科技有限公司、北京锐讯灵通科技有限公司</td>
+</tr>
+<tr>
+<td><strong>收集个人信息类型</strong></td>
+<td>设备信息（如 IDFV、OpenUDID/GUID）、网络信息（如 IP 地址、网络类型）、应用版本、渠道信息；SDK 还可能采集 SDK/API 版本、设备型号、操作系统版本、语言/时区、网络状态等非个人识别类技术信息</td>
 </tr>
 <tr>
 <td><strong>处理目的</strong></td>
-<td>产品分析、功能优化、错误统计</td>
+<td>产品分析、功能优化、渠道统计</td>
 </tr>
 <tr>
 <td><strong>默认状态</strong></td>
@@ -184,12 +331,16 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <td>打开本应用 → <strong>设置</strong> → 关闭 <strong>「启用分析」</strong></td>
 </tr>
 <tr>
-<td><strong>我们发送的数据</strong></td>
-<td>见下表「分析事件类型」</td>
+<td><strong>我们上报的数据</strong></td>
+<td>去标识化自定义事件及参数（见下表「分析事件类型」）</td>
 </tr>
 <tr>
-<td><strong>我们不发送的数据</strong></td>
+<td><strong>我们不通过友盟发送的数据</strong></td>
 <td>姓名、邮箱、电话、通讯录、照片、精确位置、书籍正文、章节内容、书名、作者、文件名</td>
+</tr>
+<tr>
+<td><strong>隐私权政策链接</strong></td>
+<td><a href="https://www.umeng.com/page/policy">友盟+ 隐私政策</a></td>
 </tr>
 </tbody>
 </table>
@@ -212,7 +363,7 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </tr>
 <tr>
 <td>书籍导入</td>
-<td>导入来源（文件/共享/网页）、格式、是否重复</td>
+<td>导入来源（文件/共享/网页/WebDAV/SMB）、格式、是否重复</td>
 </tr>
 <tr>
 <td>网页导入</td>
@@ -230,23 +381,34 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <td>错误</td>
 <td>错误类型、非个人化错误描述（不含用户书籍内容）</td>
 </tr>
+<tr>
+<td>书签 / 标注</td>
+<td>是否含备注、标注类型；不含正文</td>
+</tr>
+<tr>
+<td>iCloud 同步</td>
+<td>是否开启、同步类型、耗时区间；不含书名与内容</td>
+</tr>
+<tr>
+<td>Apple Watch</td>
+<td>打开耗时区间、阅读时长区间、书籍格式；不含书名</td>
+</tr>
 </tbody>
 </table>
-<p><strong>用户属性</strong>（可选，用于细分统计）：主题模式、界面语言偏好等汇总信息。</p>
-<p><strong>数据存储与跨境</strong>：Firebase 可能将数据处理于您所在国家/地区以外（如美国）的服务器，并受 Google 安全措施约束。详见：</p>
+<p><strong>说明</strong>：</p>
 <ul>
-<li><a href="https://policies.google.com/privacy">Google 隐私政策</a></li>
-<li><a href="https://firebase.google.com/terms">Firebase 使用条款</a></li>
-<li><a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase 数据收集说明</a></li>
+<li>本应用<strong>未启用</strong>友盟 SDK 的自动页面采集（<code>setAutoPageEnabled</code> 保持默认关闭），页面浏览信息由我们在代码中按需上报。</li>
+<li>本应用<strong>未调用</strong>友盟 SDK 的位置信息采集接口。</li>
+<li>关闭数据分析后，我们将停止通过友盟 SDK 收集新的使用事件；友盟侧已收集数据的保留与删除适用友盟+ 相关政策。</li>
 </ul>
-<p>关闭数据分析后，我们将停止通过 Firebase 收集新的分析事件；Google 侧已收集数据的保留与删除适用 Google 相关政策。</p>
+<p><strong>数据存储与跨境</strong>：友盟+ 可能将数据存储于中华人民共和国境内服务器，受其安全措施约束。详见 <a href="https://www.umeng.com/page/policy">友盟+ 隐私政策</a>。</p>
 <h3>我们<strong>不使用</strong>的其他第三方服务</h3>
 <p>本应用<strong>不包含</strong>：</p>
 <ul>
 <li>❌ 第三方广告 SDK</li>
-<li>❌ 独立崩溃上报 SDK（如 Crashlytics；错误事件仅通过 Firebase Analytics 记录）</li>
 <li>❌ 社交媒体 SDK</li>
 <li>❌ 由我们运营的远程书库或同步服务</li>
+<li>❌ Firebase Analytics / Crashlytics（旧版本曾使用，现已移除）</li>
 </ul>
 <h3>我们<strong>可能涉及</strong>的 Apple 系统服务</h3>
 <table>
@@ -259,6 +421,16 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </thead>
 <tbody>
 <tr>
+<td>iCloud 同步（你主动开启）</td>
+<td>在您的设备间同步阅读进度、书签、笔记与书籍文件</td>
+<td>由 Apple 按 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 存储于您的 iCloud 账户；我们无权访问</td>
+</tr>
+<tr>
+<td>Apple Watch 连接</td>
+<td>向已配对手表传输书库与进度</td>
+<td>由 Apple WatchConnectivity 完成；我们无权访问</td>
+</tr>
+<tr>
 <td>文件 App / 文档共享</td>
 <td>导入或管理书籍文件（若您在系统设置中允许）</td>
 <td>由您主动操作；数据留在设备或您选择的 iCloud 驱动器</td>
@@ -266,7 +438,7 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <tr>
 <td>Apple iCloud 设备备份</td>
 <td>若您开启整机 iCloud 备份，应用沙盒可能随备份加密上传</td>
-<td>由 Apple 按 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 处理</td>
+<td>由 Apple 按 Apple 隐私政策处理</td>
 </tr>
 <tr>
 <td>App Store / 内购（若适用）</td>
@@ -281,36 +453,49 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <hr />
 <h2>🔒 数据安全</h2>
 <ol>
-<li><strong>设备安全</strong>：请使用密码、Face ID 或 Touch ID 保护您的设备。</li>
+<li><strong>设备安全</strong>：请使用密码、Face ID 或 Touch ID 保护您的设备；可另行开启 App 锁。</li>
 <li><strong>沙盒隔离</strong>：应用数据存储在 iOS 沙盒中，其他应用无法直接读取。</li>
 <li><strong>本地网页导入</strong>：仅在您主动开启时监听局域网；建议在可信 Wi‑Fi 环境下使用，用毕关闭服务。</li>
-<li><strong>iCloud 备份</strong>：若您启用 iCloud 备份，备份内容由 Apple 加密保管。</li>
+<li><strong>iCloud 同步与备份</strong>：同步与备份数据由 Apple 按其安全机制加密传输与存储；我们无权访问。</li>
+<li><strong>手表数据</strong>：仅存储在与您配对的 Apple Watch 本地，由系统加密保护。</li>
+<li><strong>无自建服务器</strong>：我们没有存储您书库的服务器，因此不存在因我方服务器泄露而导致书库外泄的风险。</li>
 </ol>
 <hr />
 <h2>👶 儿童隐私</h2>
-<p>本应用为通用阅读工具，不面向 13 岁以下儿童主动收集个人信息。本应用不展示第三方广告，不收集儿童姓名、联系方式等个人信息。若您为监护人并认为孩子向我们提供了信息，请通过下文联系方式与我们联系。</p>
+<p>本应用为通用阅读工具，<strong>不面向不满 14 周岁的儿童</strong>主动收集个人信息。本应用不展示第三方广告，不收集儿童姓名、联系方式等个人信息。若您为监护人并认为孩子向我们提供了信息，请通过下文联系方式与我们联系。</p>
 <hr />
 <h2>🌍 数据跨境传输</h2>
 <ul>
 <li><strong>书库与阅读数据</strong>：默认仅存于您的设备，我们不做跨境传输。</li>
-<li><strong>Firebase Analytics</strong>（若开启）：数据可能传输至 Google 境外服务器，适用 Google 隐私政策与安全措施。</li>
-<li><strong>网页导入</strong>：仅在您的本地网络内传输，不经过我们的服务器。</li>
+<li><strong>iCloud 同步</strong>（若开启）：数据存储于您的 iCloud 账户，可能由 Apple 按其隐私政策传输至您所在国家/地区以外的数据中心。</li>
+<li><strong>Apple Watch 同步</strong>：仅在您的 iPhone 与手表之间传输，不经过我们的服务器。</li>
+<li><strong>友盟统计 SDK</strong>（若开启）：数据存储于中华人民共和国境内服务器，适用 <a href="https://www.umeng.com/page/policy">友盟+ 隐私政策</a>。</li>
+<li><strong>网页导入 / WebDAV / SMB</strong>：仅在您的本地网络内传输，不经过我们的服务器。</li>
 <li><strong>Apple 服务</strong>（如 iCloud 备份、App Store）：适用 Apple 相关政策，可能涉及境外数据中心。</li>
 </ul>
 <hr />
 <h2>📝 您的权利</h2>
 <p>根据适用的隐私法律（如 GDPR、CCPA、中国《个人信息保护法》），您享有以下权利：</p>
 <h3>1. 访问权</h3>
-<p>您可在应用内查看书架、阅读进度与统计信息。</p>
+<p>您可在应用内查看书架、阅读进度、笔记与统计信息；iCloud 同步数据可在您的 iCloud 账户中查看。</p>
 <h3>2. 删除权</h3>
 <ul>
-<li>删除单本书籍：在书架中删除。</li>
-<li>删除全部数据：卸载本应用，或使用系统「设置 → 通用 → iPhone 储存空间」清除应用数据。</li>
+<li>删除单本书籍：在书架中删除，同时会删除该书在本机的进度、笔记与缓存。</li>
+<li>删除 iCloud 同步数据：关闭 <strong>设置 → iCloud 同步</strong> 后，在系统 iCloud 管理或「文件」App 中删除对应数据；关闭开关本身不会自动删除已同步数据。</li>
+<li>删除手表数据：取消手表同步或删除手表 App。</li>
+<li>删除全部本地数据：卸载本应用，或使用系统「设置 → 通用 → iPhone 储存空间」清除应用数据。</li>
 </ul>
-<h3>3. 撤回同意 / 退出分析</h3>
-<p>您可随时在 <strong>设置 → 启用分析</strong> 中关闭 Firebase Analytics。您亦可在 <strong>设置 → 隐私与安全性 → 本地网络</strong> 中关闭 AuraRead 的本地网络权限；网页导入将无法使用，但不影响已导入书籍的本地阅读。</p>
+<h3>3. 撤回同意</h3>
+<ul>
+<li><strong>分析数据</strong>：随时在 <strong>设置 → 启用分析</strong> 中关闭友盟统计上报。</li>
+<li><strong>iCloud 同步</strong>：随时在 <strong>设置 → iCloud 同步</strong> 中关闭总开关或分项开关。</li>
+<li><strong>相机 / 面容数据</strong>：关闭「闭眼翻页」即停止 AR 会话，并可在系统设置中撤销相机权限。</li>
+<li><strong>Face ID</strong>：关闭 App 锁或撤销系统 Face ID 授权。</li>
+<li><strong>本地网络</strong>：在 <strong>设置 → 隐私与安全性 → 本地网络</strong> 中关闭 AuraRead 的权限；网页导入 / WebDAV / SMB 将无法使用，但不影响已导入书籍的本地阅读。</li>
+<li><strong>通知</strong>：在系统通知设置中关闭阅读提醒。</li>
+</ul>
 <h3>4. 数据可携带权</h3>
-<p>您导入的书籍文件存储于应用沙盒；可通过文件共享或重新导出（视系统功能而定）自行备份。</p>
+<p>您导入的书籍文件存储于应用沙盒；可通过文件共享或重新导出（视系统功能而定）自行备份。iCloud 中的书籍文件可在「文件」App 中直接访问与导出。</p>
 <hr />
 <h2>🔔 隐私政策更新</h2>
 <p>我们可能不时更新本政策。更新后的版本将发布于本文档，并修订「最后更新日期」。重大变更时，我们可能通过应用内说明或 App Store 更新说明告知您。若您继续使用本应用，即表示接受更新后的政策；若不同意，请停止使用并卸载本应用。</p>
@@ -357,6 +542,18 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 <td>💾 默认仅存于您的设备</td>
 </tr>
 <tr>
+<td><strong>iCloud 同步</strong></td>
+<td>☁️ 默认关闭，仅在您开启后通过您的 iCloud 账户同步；我们无权访问</td>
+</tr>
+<tr>
+<td><strong>Apple Watch</strong></td>
+<td>⌚ 仅在您配对使用时经系统框架传输；我们无权访问</td>
+</tr>
+<tr>
+<td><strong>面容数据（TrueDepth）</strong></td>
+<td>👁 仅实时读取眼部闭合系数用于翻页；不采集图像、不存储、不上传、不共享</td>
+</tr>
+<tr>
 <td><strong>云端书库</strong></td>
 <td>❌ 我们不运营、不托管您的书籍</td>
 </tr>
@@ -366,11 +563,11 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </tr>
 <tr>
 <td><strong>产品分析</strong></td>
-<td>📊 可选 Firebase Analytics，默认开启，可随时关闭</td>
+<td>📊 可选友盟统计，默认开启，可随时关闭；不含书籍内容</td>
 </tr>
 <tr>
 <td><strong>广告</strong></td>
-<td>❌ 无第三方广告</td>
+<td>❌ 无第三方广告、无跨 App 追踪</td>
 </tr>
 <tr>
 <td><strong>用户内容</strong></td>
@@ -380,7 +577,7 @@ footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255
 </table>
 <hr />
 <h2>🎯 隐私设计原则</h2>
-<p>本应用遵循「默认本地、最小收集、透明可控」的原则：阅读数据留在您的设备，网络能力仅用于您可选的局域网导入，且不将书库上传至我们的服务器。</p>
+<p>本应用遵循「默认本地、最小收集、透明可控」的原则：阅读数据默认留在您的设备；iCloud 与手表同步均为<strong>可选</strong>，且经 Apple 系统框架在您自己的设备间完成；分析数据可一键关闭；闭眼翻页的面容数据<strong>不采集、不存储、不上传</strong>。</p>
 <hr />
 <p><strong>感谢您选择 AuraRead。</strong></p>
 <p>我们致力于以简洁、本地化的方式保护您的阅读隐私。</p>
